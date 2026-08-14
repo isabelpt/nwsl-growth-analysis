@@ -1,0 +1,8 @@
+# Raw pulls can be large / regenerable from the API -- uncomment if you'd
+# rather host these in a cloud folder and link it in the README instead of
+# committing them to the repo.
+# data/raw/*.csv
+
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
