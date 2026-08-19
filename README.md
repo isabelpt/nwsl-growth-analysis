@@ -37,7 +37,8 @@ All plotting notebooks (`03`, `06`, `07`, `08`, `09`) import a shared color them
 ## Data
 
 - **Stadium/game data**: pulled live from the [American Soccer Analysis API](https://www.americansocceranalysis.com/) (`itscalledsoccer` package, no auth needed) plus scraped Wikipedia stadium tables. No API key required.
-- **Media coverage data**: pulled from the [MediaCloud API](https://www.mediacloud.org/). Requires an API key 
+- **Media coverage data**: pulled from the [MediaCloud API](https://www.mediacloud.org/). Requires an API key
+- **Youtube data**: pulled from [Youtube Data API v3](https://developers.google.com/youtube/v3). Requires an API key
 
 ## Running
 
