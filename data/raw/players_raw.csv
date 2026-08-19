@@ -70,9 +70,9 @@ player_id,player_name,birth_date,nationality,primary_broad_position,primary_gene
 0x5gW0mw57,Shelby Hogan,1998-05-10,USA,GK,GK,,,"['2022', '2023', '2024', '2025', '2026']",,,,nwsl,nwsl
 0x5gW3J757,Manaka Matsukubo,2004-07-28,Japan,FW,ST,,,"['2023', '2024', '2025', '2026']",5.0,1.0,,nwsl,nwsl
 0x5gWVaj57,Ana Dias,1997-10-02,Portugal,FW,ST,,,2024,,,,nwsl,nwsl
-0x5gkW2j57,Audrey McKeen,2008-11-26,USA,MF,W,FW,ST,2026,5.0,8.0,,nwsl,nwsl
+0x5gkW2j57,Audrey McKeen,2008-11-26,USA,MF,W,,CM,2026,5.0,8.0,,nwsl,nwsl
 0x5gko0j57,Aaliyah Farmer,2003-10-27,Mexico,DF,CB,,,2026,,,,nwsl,nwsl
-0x5gkyRb57,Mirann Gacioch,2003-10-30,USA,DF,CB,,FB,2026,5.0,5.0,,nwsl,nwsl
+0x5gkyRb57,Mirann Gacioch,2003-10-30,USA,DF,CB,,,2026,5.0,5.0,,nwsl,nwsl
 2lqR70GxQr,Ryanne Brown,1999-01-21,USA,DF,FB,,,"['2022', '2023', '2024', '2026']",,,,nwsl,nwsl
 2lqR7Y32Qr,Gabriella English,1996-11-21,USA,,,,,{},5.0,10.0,,nwsl,nwsl
 2lqR7an0Qr,Hannah Seabert,1995-02-27,USA,GK,GK,,,2025,5.0,10.0,132.0,nwsl,nwsl
@@ -132,7 +132,7 @@ player_id,player_name,birth_date,nationality,primary_broad_position,primary_gene
 2vQ1R0jLMr,Tamara,2003-05-12,Brazil,MF,W,,,2026,5.0,9.0,141.0,nwsl,nwsl
 2vQ1R1WbMr,Caroline Conti,2001-03-28,USA,MF,CM,,,"['2024', '2025', '2026']",,,,nwsl,nwsl
 2vQ1eNl0Qr,Sarah Schupansky,2003-08-25,USA,MF,CM,,,"['2025', '2026']",5.0,5.0,,nwsl,nwsl
-2vQ1emn4Qr,Carolyn Calzada,2003-03-06,USA,DF,CB,,,2026,5.0,9.0,,nwsl,nwsl
+2vQ1emn4Qr,Carolyn Calzada,2003-03-06,USA,DF,CB,,FB,2026,5.0,9.0,,nwsl,nwsl
 2vQ1jGBxMr,Andrea Rán Hauksdóttir,1996-01-28,Iceland,FW,W,,,2021,,,,nwsl,nwsl
 315V1BnYM9,Stephanie Sparkowski,2002-04-18,USA,,,,,{},,,,nwsl,nwsl
 315V1XobM9,Khyah Harper,2002-08-15,USA,MF,W,,,"['2025', '2026']",5.0,5.0,,nwsl,nwsl
@@ -230,7 +230,7 @@ player_id,player_name,birth_date,nationality,primary_broad_position,primary_gene
 7VqGj8N65v,Bianca Henninger,1990-10-22,Mexico,GK,GK,,,2016,5.0,6.0,,nwsl,nwsl
 7VqGj8wd5v,Jessie Scarpa,1996-05-17,USA,FW,ST,,W,2020,5.0,7.0,,nwsl,nwsl
 7VqGjEoj5v,Nikki Stanton,1990-10-26,USA,MF,DM,,,"['2016', '2017', '2018', '2019', '2021', '2022', '2023', '2024']",5.0,7.0,,nwsl,nwsl
-7VqGjK3A5v,Ashley Hatch,1995-05-25,USA,FW,ST,,,"['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025']",5.0,9.0,,nwsl,nwsl
+7VqGjK3A5v,Ashley Hatch,1995-05-25,USA,FW,ST,,,"['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026']",5.0,9.0,,nwsl,nwsl
 7VqGjVXY5v,Maddie Bauer,1995-03-20,USA,DF,CB,MF,DM,"['2017', '2018']",5.0,8.0,,nwsl,nwsl
 7VqGjXpX5v,Kailen Sheridan,1995-07-16,Canada,GK,GK,,,"['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026']",5.0,9.0,,nwsl,nwsl
 7VqGjYPj5v,Jessie Fleming,1998-03-11,Canada,MF,CM,,DM,"['2024', '2025', '2026']",5.0,3.0,,nwsl,nwsl
@@ -259,12 +259,13 @@ player_id,player_name,birth_date,nationality,primary_broad_position,primary_gene
 7vQ7rjrGqD,Abby Smith,1993-10-04,USA,GK,GK,,,"['2016', '2017', '2018', '2020', '2021', '2022', '2023', '2025', '2026']",5.0,9.0,,nwsl,nwsl
 7vQ7rpPLqD,Satara Murray,1993-07-01,USA,DF,CB,,FB,"['2019', '2022', '2023']",5.0,8.0,,nwsl,nwsl
 7vQ7w3v8QD,Carly Wickenheiser,1997-06-03,Canada,MF,CM,,,2026,5.0,6.0,,nwsl,nwsl
+7vQ7woLeQD,Ali Swensen,,USA,,,,,{},,,,nwsl,nwsl
 7vQ7xAxdMD,Emily Clegg,2005-11-01,New Zealand,FW,ST,,,2024,5.0,9.0,,nwsl,nwsl
 7vQ7xkp8MD,Isabella Beletic,1998-08-10,USA,,,,,{},,,,nwsl,nwsl
 7vQ7xzeEMD,Kysha Sylla,2004-02-04,France,DF,CB,,,2025,5.0,8.0,,nwsl,nwsl
 9Yqd63z7Mv,Mal Swanson,1998-04-29,USA,MF,W,FW,W,"['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2026']",5.0,4.0,119.0,nwsl,nwsl
 9Yqd662mMv,Nahikari García,1997-03-10,Spain,DF,FB,,,2026,5.0,3.0,117.0,nwsl,nwsl
-9Yqd67mLMv,Gabi Nunes,1997-03-10,Brazil,,,,,{},5.0,7.0,123.0,nwsl,nwsl
+9Yqd67mLMv,Gabi Nunes,1997-03-10,Brazil,DF,FB,,,2026,5.0,7.0,123.0,nwsl,nwsl
 9Yqd6LYoMv,Jéssica Silva,1994-12-11,Portugal,MF,W,FW,W,"['2021', '2024', '2025']",5.0,7.0,119.0,nwsl,nwsl
 9Yqd6PL7Mv,Lindsey Heaps,1994-05-26,USA,MF,CM,,DM,"['2016', '2017', '2018', '2019', '2020', '2021', '2026']",5.0,9.0,168.0,nwsl,nwsl
 9Yqd6bA7Mv,Kristen Hamilton,1992-04-17,USA,FW,ST,,,"['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']",5.0,4.0,,nwsl,nwsl
@@ -287,7 +288,7 @@ player_id,player_name,birth_date,nationality,primary_broad_position,primary_gene
 9YqdwJ8R5v,Tess Boade,1999-02-03,USA,FW,ST,,,"['2022', '2023', '2024', '2025', '2026']",,,,nwsl,nwsl
 9Yqdwkv75v,Sveindís Jane Jónsdóttir,2001-06-05,Iceland,FW,ST,,,"['2025', '2026']",5.0,10.0,,nwsl,nwsl
 9vQ2220eQK,Angela Salem,1988-07-24,USA,MF,DM,,,"['2016', '2017', '2018', '2019', '2020', '2021']",5.0,5.0,119.0,nwsl,nwsl
-9vQ2222aQK,Vilde Risa,1995-07-13,Norway,MF,DM,,AM,2026,5.0,5.0,,nwsl,nwsl
+9vQ2222aQK,Vilde Risa,1995-07-13,Norway,MF,DM,,,2026,5.0,5.0,,nwsl,nwsl
 9vQ222oeQK,Hayley Raso,1994-09-05,Australia,MF,W,,,"['2016', '2017', '2018', '2019']",5.0,4.0,,nwsl,nwsl
 9vQ223OaQK,Geyse,1998-03-27,Brazil,MF,W,,,2025,5.0,6.0,128.0,nwsl,nwsl
 9vQ22Km7QK,Kaitlyn Torpey,2000-03-17,Australia,DF,FB,,,"['2024', '2025']",5.0,6.0,,nwsl,nwsl
@@ -536,6 +537,7 @@ NWMWjWweQl,Chioma Okafor,2003-03-20,Nigeria,FW,W,,,2026,5.0,5.0,,nwsl,nwsl
 NWMWl2jY5l,Kaleigh Kurtz,1994-09-09,USA,DF,CB,,,"['2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026']",5.0,8.0,,nwsl,nwsl
 NWMWl60z5l,Emily Mason,2002-10-23,USA,DF,CB,,,"['2025', '2026']",5.0,9.0,,nwsl,nwsl
 NWMWl7lE5l,Nicole Baxter,1994-05-12,USA,MF,CM,,DM,"['2020', '2021', '2022']",5.0,4.0,,nwsl,nwsl
+NWMWlJDe5l,Agostina Holzheier,2003-09-30,Argentina,FW,ST,,,2026,,,,nwsl,nwsl
 NWMWlOGK5l,Carly Nelson,1998-02-11,USA,GK,GK,,,"['2021', '2023', '2024']",,,,nwsl,nwsl
 NWMWlOGj5l,Anika Rodriguez,1997-01-01,USA,,,,,{},5.0,2.0,,nwsl,nwsl
 NWMWlObE5l,Bridgette Andrzejewski,1997-01-27,USA,FW,W,,,2020,5.0,8.0,,nwsl,nwsl
@@ -666,7 +668,7 @@ XVqKWbOKq0,Amanda Frisbie,1992-05-29,USA,DF,FB,,,"['2016', '2017', '2018']",5.0,
 XVqKWmlOq0,Viviana Villacorta,1999-02-02,USA,MF,DM,,CM,"['2022', '2023', '2024', '2025']",5.0,7.0,,nwsl,nwsl
 XVqKWp8aq0,Danica Evans,1995-06-02,USA,FW,ST,,,"['2017', '2018', '2019', '2020']",5.0,6.0,,nwsl,nwsl
 XVqKWw80q0,Linda Motlhalo,1998-07-01,South Africa,MF,DM,,,"['2018', '2024']",5.0,4.0,104.0,nwsl,nwsl
-XVqKYmW0M0,Adriana Leon,1992-10-02,Canada,FW,ST,,W,"['2016', '2017', '2018', '2023', '2025', '2026']",5.0,3.0,,nwsl,nwsl
+XVqKYmW0M0,Adriana Leon,1992-10-02,Canada,FW,ST,,,"['2016', '2017', '2018', '2023', '2025', '2026']",5.0,3.0,,nwsl,nwsl
 XVqKbBVD50,Renee Lyles,,USA,MF,W,,,2026,,,,nwsl,nwsl
 XVqKe41KM0,Chandra Eigenberger,1993-01-14,USA,,,,,{},,,,nwsl,nwsl
 XVqKeJGwM0,Deyna Castellanos,1999-04-18,Venezuela,MF,CM,FW,ST,"['2024', '2025', '2026']",5.0,7.0,139.0,nwsl,nwsl
@@ -741,7 +743,7 @@ aDQ0l9YvQE,Maia Pérez,1999-10-19,USA,,,,,{},,,,nwsl,nwsl
 aDQ0lBxGQE,Onyeka Gamero,2006-02-23,USA,MF,W,,,2026,5.0,4.0,,nwsl,nwsl
 aDQ0lPXGQE,Mikaela Howell,,England,DF,FB,,,2020,,,,nwsl,nwsl
 aDQ0x3YEQE,Hannah Anderson,2001-04-03,USA,DF,CB,,,"['2024', '2025', '2026']",,,,nwsl,nwsl
-aDQ0x4glQE,Jordynn Dudley,2004-11-21,USA,MF,W,,,2026,,,,nwsl,nwsl
+aDQ0x4glQE,Jordynn Dudley,2004-11-21,USA,MF,W,FW,W,2026,,,,nwsl,nwsl
 aDQ0xDDPQE,Ally Cook,2000-07-18,USA,FW,ST,,,2024,,,,nwsl,nwsl
 e7Mz0Oxeqr,Jenna Butler,2000-01-18,USA,MF,CM,,,2024,,,,nwsl,nwsl
 e7Mz9JKeQr,Carli Lloyd,1982-07-16,USA,FW,ST,,,"['2016', '2017', '2018', '2019', '2021']",5.0,8.0,,nwsl,nwsl
@@ -760,10 +762,10 @@ e7Mzl1vJqr,Allie Wisner,1990-10-12,USA,,,,,{},5.0,7.0,,nwsl,nwsl
 e7MzlELeqr,Tegan McGrady,1997-10-11,USA,DF,FB,,,"['2019', '2020', '2021', '2022', '2023']",5.0,6.0,,nwsl,nwsl
 e7MzlGkjqr,Jen Hoy,1991-01-18,USA,FW,ST,,,"['2016', '2017', '2018', '2019']",5.0,5.0,,nwsl,nwsl
 e7Mzllbeqr,Samantha Witteman,1994-02-26,USA,DF,FB,MF,W,"['2016', '2017']",,,,nwsl,nwsl
-e7MzlobXqr,Miljana Ivanovic,2000-05-17,Serbia,,,,,{},,,,nwsl,nwsl
+e7MzlobXqr,Miljana Ivanovic,2000-05-17,Serbia,MF,W,,,2026,,,,nwsl,nwsl
 e7MzlyXGqr,Thembi Kgatlana,1996-05-02,South Africa,FW,W,MF,W,"['2018', '2023']",5.0,1.0,110.0,nwsl,nwsl
 e7Mzlyyeqr,Ella Stevens,1997-12-11,USA,FW,ST,,,"['2020', '2021', '2022', '2023', '2024', '2025', '2026']",,,,nwsl,nwsl
-e7MzzAdjMr,Caiya Hanks,2004-09-26,USA,MF,W,,,2025,5.0,4.0,,nwsl,nwsl
+e7MzzAdjMr,Caiya Hanks,2004-09-26,USA,MF,W,,,"['2025', '2026']",5.0,4.0,,nwsl,nwsl
 eV5D022O5K,Manon Melis,1986-08-31,Netherlands,FW,ST,,,2016,5.0,5.0,,nwsl,nwsl
 eV5D27XYQK,Croix Soto,2001-01-02,USA,DF,CB,,,"['2023', '2024']",5.0,10.0,,nwsl,nwsl
 eV5D2w7JQK,Jyllissa Harris,2000-04-08,USA,DF,CB,,,"['2023', '2024']",5.0,8.0,,nwsl,nwsl
@@ -844,7 +846,7 @@ gOMnREWAMw,Taylor Otto,1997-10-23,USA,MF,DM,,,"['2021', '2022']",5.0,10.0,,nwsl,
 gOMnREd8Mw,Jaelin Howell,1999-11-21,USA,MF,DM,,,"['2022', '2023', '2024', '2025', '2026']",5.0,8.0,,nwsl,nwsl
 gOMnREv8Mw,Amanda Dennis,1998-05-25,USA,GK,GK,,,2021,6.0,0.0,,nwsl,nwsl
 gOMnRNZAMw,Emily Boyd,1996-07-25,USA,GK,GK,,,"['2018', '2019', '2020', '2021', '2022', '2023']",5.0,9.0,,nwsl,nwsl
-gOMnROp6Mw,Anna Gasper,1997-01-03,Germany,MF,CM,,DM,2026,,,,nwsl,nwsl
+gOMnROp6Mw,Anna Gasper,1997-01-03,Germany,MF,CM,,,2026,,,,nwsl,nwsl
 gOMnRbbAMw,Yuri Kawamura,1989-05-17,Japan,DF,CB,,,"['2017', '2018']",5.0,6.0,126.0,nwsl,nwsl
 gOMnRboOMw,Carson Pickett,1993-09-15,USA,DF,FB,,,"['2016', '2017', '2018', '2019', '2021', '2022', '2023', '2024', '2025', '2026']",5.0,8.0,,nwsl,nwsl
 gOMnRdyOMw,Allie Long,1987-08-13,USA,MF,DM,,,"['2016', '2017', '2018', '2019', '2020', '2021', '2023']",5.0,8.0,130.0,nwsl,nwsl
@@ -985,7 +987,7 @@ ljqEJe3YQx,Kennedy Fuller,2007-03-09,USA,MF,AM,,,"['2024', '2025', '2026']",5.0,
 ljqEJjAAQx,Brittany Isenhour,1997-09-22,USA,GK,GK,,,"['2020', '2023']",5.0,8.0,,nwsl,nwsl
 ljqEJoXwQx,Morgan Goff,,USA,DF,FB,,,2022,,,,nwsl,nwsl
 ljqEJrRoQx,Naomi Powell,1999-01-10,USA,,,,,{},,,,nwsl,nwsl
-ljqELLPE5x,Aleigh Gambone,2000-10-09,USA,MF,CM,,,2026,5.0,3.0,,nwsl,nwsl
+ljqELLPE5x,Aleigh Gambone,2000-10-09,USA,FW,W,MF,CM,2026,5.0,3.0,,nwsl,nwsl
 ljqELZdo5x,Maximiliane Rall,1993-11-18,Germany,DF,FB,,,2024,5.0,11.0,157.0,nwsl,nwsl
 ljqELdLY5x,Dayana Louis,2003-09-24,Haiti,MF,DM,,,2026,5.0,10.0,130.0,nwsl,nwsl
 ljqELeEw5x,Katie McClure,1998-03-14,USA,MF,W,FW,W,"['2020', '2021']",5.0,4.0,,nwsl,nwsl
@@ -1044,7 +1046,7 @@ p6qborY8Q0,Janni Thomsen,2000-02-16,Denmark,DF,FB,,,"['2025', '2026']",5.0,7.0,1
 p6qbovG4Q0,Shea Connors,1996-04-12,USA,MF,W,,CM,2023,5.0,3.0,,nwsl,nwsl
 p6qboyg4Q0,Amelia Van Zanten,2005-01-25,Jamaica,DF,FB,,,2026,5.0,5.0,,nwsl,nwsl
 raMyA2pJMd,Andressinha,1995-05-01,Brazil,MF,CM,,,"['2016', '2017', '2018', '2019']",5.0,3.0,132.0,nwsl,nwsl
-raMyAD22Md,Jenna Nighswonger,2000-11-28,USA,DF,FB,,,"['2023', '2024']",,,,nwsl,nwsl
+raMyAD22Md,Jenna Nighswonger,2000-11-28,USA,DF,FB,,,"['2023', '2024', '2026']",,,,nwsl,nwsl
 raMyADblMd,Caroline Kastor,1991-10-12,USA,MF,W,FW,ST,2016,5.0,3.0,,nwsl,nwsl
 raMyADzlMd,Estelle Johnson,1988-07-21,Cameroon,DF,CB,,,"['2016', '2017', '2018', '2019', '2020', '2021', '2022']",5.0,6.0,,nwsl,nwsl
 raMyAGadMd,Mariah Lee,1996-06-30,USA,MF,W,,,2020,5.0,4.0,,nwsl,nwsl
@@ -1123,7 +1125,7 @@ wvq9gl37MW,Marley Canales,1997-11-16,USA,MF,DM,,,"['2022', '2023']",,,,nwsl,nwsl
 wvq9goBNMW,Civana Kuhlmann,1999-04-14,USA,FW,ST,,,2023,5.0,6.0,,nwsl,nwsl
 wvq9gol1MW,Ellie Jean,1997-01-31,USA,DF,CB,,,"['2022', '2023', '2024', '2025', '2026']",,,,nwsl,nwsl
 wvq9jJ31QW,Gabrielle Robinson,2001-06-18,USA,DF,CB,,,"['2023', '2024', '2025', '2026']",,,,nwsl,nwsl
-wvq9jZpZQW,Lauryn Thompson,2007-11-04,England,MF,W,,,2026,5.0,6.0,130.0,nwsl,nwsl
+wvq9jZpZQW,Lauryn Thompson,2007-11-04,England,MF,W,FW,W,2026,5.0,6.0,130.0,nwsl,nwsl
 wvq9p8815W,Christen Press,1988-12-29,USA,FW,ST,,,"['2016', '2017', '2018', '2019', '2022', '2024', '2025']",5.0,7.0,130.0,nwsl,nwsl
 wvq9penZ5W,Dzsenifer Marozsán,1992-04-18,Germany,FW,ST,MF,CM,2021,5.0,8.0,150.0,nwsl,nwsl
 xW5p702YMg,Leah Klenke,2004-06-21,USA,DF,CB,,FB,2026,,,,nwsl,nwsl
@@ -1152,7 +1154,7 @@ zeQZ7ZYDMK,Halimatu Ayinde,1995-05-16,Nigeria,FW,ST,,,2016,5.0,5.0,,nwsl,nwsl
 zeQZ7kAYMK,McKenzie Meehan,1994-12-25,USA,FW,ST,,,"['2017', '2018', '2019', '2020']",5.0,5.0,,nwsl,nwsl
 zeQZ7x0xMK,Yuka Momiki,1996-04-09,Japan,MF,W,,,"['2020', '2021']",5.0,0.0,108.0,nwsl,nwsl
 zeQZ7xZYMK,Kim Reynolds,,USA,,,,,{},,,,nwsl,nwsl
-zeQZJPmZQK,Sydney Leroux,1990-05-07,USA,FW,ST,,,"['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']",5.0,7.0,,nwsl,nwsl
+zeQZJPmZQK,Sydney Leroux,1990-05-07,USA,FW,ST,,,"['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2026']",5.0,7.0,,nwsl,nwsl
 zeQZJXGZQK,Becky Sauerbrunn,1985-06-06,USA,DF,CB,,,"['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']",5.0,7.0,141.0,nwsl,nwsl
 zeQZJXnKQK,Almuth Schult,1991-02-09,Germany,GK,GK,,,"['2022', '2024']",5.0,11.0,157.0,nwsl,nwsl
 zeQZJXvKQK,Kim Little,1990-06-29,Scotland,MF,DM,,,"['2016', '2022']",5.0,4.0,132.0,nwsl,nwsl
@@ -1163,7 +1165,7 @@ zeQZXEYr5K,Elaine Rouse,2002-08-31,USA,DF,FB,,,2026,5.0,7.0,,nwsl,nwsl
 zeQZXkwD5K,Julia Grosso,2000-08-29,Canada,MF,CM,,,"['2024', '2025', '2026']",5.0,5.0,,nwsl,nwsl
 zeQZeGBNqK,Kimmi Ascanio,2008-01-21,,MF,DM,,,"['2024', '2025', '2026']",,,,nwsl,nwsl
 zeQZeYOxqK,Kate Howarth,1991-07-03,USA,FW,W,MF,AM,2020,5.0,6.0,,nwsl,nwsl
-zeQZkYnxMK,Laila Harbert,2007-01-03,England,FW,W,MF,CM,2025,5.0,5.0,126.0,nwsl,nwsl
+zeQZkYnxMK,Laila Harbert,2007-01-03,England,FW,W,,,"['2025', '2026']",5.0,5.0,126.0,nwsl,nwsl
 0Oq6006M6D,Ugo Ihemelu,1983-04-03,USA,,,,,{},6.0,0.0,179.0,mls,mls
 0Oq60APM6D,Jason Hernandez,1983-08-26,USA,DF,CB,,,"['2013', '2014', '2015', '2016', '2017', '2018']",5.0,11.0,172.0,mls,mls
 0Oq60VgM6D,Jeff Larentowicz,1983-08-05,USA,MF,DM,,CM,"['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020']",6.0,1.0,176.0,mls,mls
@@ -1342,7 +1344,7 @@ zeQZkYnxMK,Laila Harbert,2007-01-03,England,FW,W,MF,CM,2025,5.0,5.0,126.0,nwsl,n
 0x5gPwLZq7,Chandler Hoffman,1990-08-17,USA,FW,ST,,,"['2014', '2015']",6.0,0.0,161.0,mls,mls
 0x5gPy4mq7,Danny Garcia,1993-10-14,USA,MF,AM,,,2014,5.0,4.0,146.0,mls,mls
 0x5gWWz757,Herman Johansson,1997-10-16,Sweden,DF,FB,,,2026,6.0,3.0,185.0,mls,mls
-0x5gWlZb57,Samuel Gidi,2004-04-15,Ghana,MF,CM,,,"['2025', '2026']",,,,mls,mls
+0x5gWlZb57,Samuel Gidi,2004-04-15,Ghana,MF,CM,DF,CB,"['2025', '2026']",,,,mls,mls
 0x5gWwgr57,Álvaro Quezada,1999-03-04,USA,DF,FB,,,2021,5.0,9.0,150.0,mls,mls
 0x5gWwmL57,Jude Wellings,2006-04-26,USA,,,,,{},6.0,2.0,139.0,mls,mls
 0x5gWy8r57,Nathan Worth,2007-02-26,USA,,,,,{},,,,mls,mls
@@ -1419,7 +1421,7 @@ zeQZkYnxMK,Laila Harbert,2007-01-03,England,FW,W,MF,CM,2025,5.0,5.0,126.0,nwsl,n
 2lqRj4jxqr,Felipe Valencia,2005-03-01,USA,,,,,{},5.0,9.0,141.0,mls,mls
 2lqRj7nDqr,Jason Shokalook,2002-09-30,USA,FW,ST,,,"['2025', '2026']",6.0,1.0,159.0,mls,mls
 2lqRj80qr0,Juninho Pernambucano,1975-01-30,Brazil,MF,CM,,,2013,5.0,10.0,157.0,mls,mls
-2lqRj90Jqr,Jackson Gilman,2004-04-29,USA,DF,CB,,,2026,,,,mls,mls
+2lqRj90Jqr,Jackson Gilman,2004-04-29,USA,DF,CB,,FB,2026,,,,mls,mls
 2lqRjDAAqr,Ian Fray,2002-08-31,USA,DF,FB,,,"['2023', '2024', '2025', '2026']",6.0,0.0,161.0,mls,mls
 2lqRjL12qr,Brandan Craig,2004-04-07,USA,DF,CB,,,"['2022', '2025', '2026']",6.0,1.0,159.0,mls,mls
 2lqRjRexqr,Mehdi Essoussi,2001-02-28,Canada,,,,,{},6.0,1.0,174.0,mls,mls
@@ -1531,7 +1533,7 @@ zeQZkYnxMK,Laila Harbert,2007-01-03,England,FW,W,MF,CM,2025,5.0,5.0,126.0,nwsl,n
 2vQ1dmoKqr,Chance Cowell,2008-07-05,Mexico,,,,,{},5.0,7.0,,mls,mls
 2vQ1dr8bqr,Andrei Chirila,2008-08-15,USA,DF,CB,,,2026,,,,mls,mls
 2vQ1dyZwqr,Geovane Jesus,2001-07-31,Brazil,DF,FB,,,2023,5.0,11.0,,mls,mls
-2vQ1eBB8Qr,Troy Elgersma,,USA,FW,ST,MF,CM,2026,,,,mls,mls
+2vQ1eBB8Qr,Troy Elgersma,,USA,DF,FB,FW,ST,2026,,,,mls,mls
 2vQ1jG0bMr,Danny Flores,2002-04-06,USA,MF,W,,,2023,5.0,8.0,150.0,mls,mls
 2vQ1jGzOMr,Ola Brynhildsen,1999-04-27,Norway,FW,ST,,,2025,5.0,9.0,154.0,mls,mls
 2vQ1lKKqrA,Daniel Paladini,1984-11-11,USA,MF,DM,,,"['2013', '2014']",5.0,9.0,165.0,mls,mls
@@ -1950,7 +1952,7 @@ zeQZkYnxMK,Laila Harbert,2007-01-03,England,FW,W,MF,CM,2025,5.0,5.0,126.0,nwsl,n
 9YqdY1n9Qv,J.J. Williams,1998-01-04,USA,FW,ST,,,"['2019', '2020']",6.0,3.0,198.0,mls,mls
 9YqdY2mRQv,Mathieu Choinière,1999-02-07,Canada,MF,CM,DF,FB,"['2018', '2019', '2021', '2022', '2023', '2024', '2025', '2026']",5.0,9.0,150.0,mls,mls
 9Yqda9EQvJ,Peter Luccin,1979-04-09,France,MF,DM,,CM,"['2013', '2014']",5.0,11.0,174.0,mls,mls
-9YqddY89qv,Cesar Ruvalcaba,2001-07-13,USA,DF,CB,,,2025,,,,mls,mls
+9YqddY89qv,Cesar Ruvalcaba,2001-07-13,USA,DF,CB,,,"['2025', '2026']",,,,mls,mls
 9YqddlYkqv,Zamir Loyo Reynaga,2011-01-20,Mexico,,,,,{},,,,mls,mls
 9Yqdj0LMvJ,Fernando Meza,1990-03-21,Argentina,DF,CB,,,2020,5.0,9.0,141.0,mls,mls
 9Yqdk7R85v,Juan David Cabezas,1991-02-27,Colombia,MF,DM,,,"['2017', '2018', '2019']",6.0,0.0,174.0,mls,mls
@@ -1977,6 +1979,7 @@ zeQZkYnxMK,Laila Harbert,2007-01-03,England,FW,W,MF,CM,2025,5.0,5.0,126.0,nwsl,n
 9Yqdw3L85v,Zidane Yañez,2008-01-26,USA,,,,,{},,,,mls,mls
 9YqdwN6j5v,Caiser Gomes,2000-04-04,Guinea-Bissau,,,,,{},6.0,0.0,170.0,mls,mls
 9YqdwNbk5v,Stanislav Lapkes,2006-03-03,USA,,,,,{},,,,mls,mls
+9YqdwRBR5v,Xavi Gnaulati,2005-01-22,USA,,,,,{},5.0,3.0,115.0,mls,mls
 9Yqdwg885v,Gilberto Flores,2003-04-01,Paraguay,DF,CB,,,"['2025', '2026']",5.0,10.0,172.0,mls,mls
 9Yqdwlrj5v,Marco Pašalić,2000-09-14,Croatia,MF,W,,,"['2025', '2026']",5.0,10.0,163.0,mls,mls
 9Yqdx3EqvJ,Benny Feilhaber,1985-01-19,USA,MF,CM,,,"['2013', '2014', '2015', '2016', '2017', '2018', '2019']",5.0,9.0,161.0,mls,mls
@@ -2062,7 +2065,7 @@ zeQZkYnxMK,Laila Harbert,2007-01-03,England,FW,W,MF,CM,2025,5.0,5.0,126.0,nwsl,n
 9vQ2x7r5K6,Camilo Sanvezzo,1988-07-21,Brazil,FW,W,,,2013,5.0,7.0,157.0,mls,mls
 9vQ2zAYQK6,Sebastien Le Toux,1984-01-10,France,MF,W,,,"['2013', '2014', '2015', '2016', '2017']",6.0,0.0,157.0,mls,mls
 9z5k31KP5A,Caden Glover,2007-03-08,USA,FW,ST,,,"['2023', '2024']",,,,mls,mls
-9z5k33zb5A,Benie Traore,2002-11-30,Ivory Coast,FW,W,,ST,2026,5.0,8.0,141.0,mls,mls
+9z5k33zb5A,Benie Traore,2002-11-30,Ivory Coast,FW,W,,,2026,5.0,8.0,141.0,mls,mls
 9z5k36ra5A,Loïc Mesanvi,2003-10-06,Togo,FW,W,,,"['2024', '2025']",,,,mls,mls
 9z5k3O7J5A,Marcelo Morales,2003-06-06,Chile,DF,FB,,,2025,5.0,8.0,123.0,mls,mls
 9z5k3dYa5A,Richard Odada,2000-11-25,Kenya,,,,,{},,,,mls,mls
@@ -2092,6 +2095,7 @@ zeQZkYnxMK,Laila Harbert,2007-01-03,England,FW,W,MF,CM,2025,5.0,5.0,126.0,nwsl,n
 9z5kRvdMA3,Andrea Pirlo,1979-05-19,Italy,MF,CM,,DM,"['2015', '2016', '2017']",5.0,10.0,150.0,mls,mls
 9z5kWA8b5A,Dekwon Barrow,2004-01-16,Canada,,,,,{},,,,mls,mls
 9z5kWANg5A,Pedrinho,2006-06-28,Brazil,MF,AM,,,2026,6.0,0.0,152.0,mls,mls
+9z5kWdVP5A,Lovens Delinois,2004-10-05,Haiti,MF,W,,,2026,,,,mls,mls
 9z5ka8adQA,Ryan Gauld,1995-12-16,Scotland,MF,AM,,,"['2021', '2022', '2023', '2024', '2025', '2026']",5.0,7.0,150.0,mls,mls
 9z5ka8kbQA,Mitch Hildebrandt,1988-11-12,USA,,,,,{},6.0,1.0,190.0,mls,mls
 9z5kaAePQA,Maximiliano Rodriguez,1994-04-01,Argentina,,,,,{},5.0,10.0,181.0,mls,mls
@@ -2115,7 +2119,7 @@ zeQZkYnxMK,Laila Harbert,2007-01-03,England,FW,W,MF,CM,2025,5.0,5.0,126.0,nwsl,n
 9z5kb9JgMA,Joshua Penn,2000-11-25,USA,FW,ST,MF,AM,2021,5.0,10.0,161.0,mls,mls
 9z5kbABgMA,Kyle Adams,1996-11-20,New Zealand,,,,,{},6.0,1.0,168.0,mls,mls
 9z5kbVWeMA,Phillip Ejimadu,1999-08-31,USA,,,,,{},6.0,3.0,214.0,mls,mls
-9z5kbYGaMA,Adrian Gill,2006-01-03,USA,,,,,{},5.0,10.0,,mls,mls
+9z5kbYGaMA,Adrian Gill,2006-01-03,USA,MF,DM,,,2026,5.0,10.0,,mls,mls
 9z5kbd6bMA,Nicolás del Grecco,1993-11-19,Argentina,,,,,{},6.0,0.0,,mls,mls
 9z5kbdvPMA,Iván Franco,2000-04-16,Paraguay,FW,W,MF,W,2023,5.0,7.0,146.0,mls,mls
 9z5kbnmdMA,Lasse Berg Johnsen,1999-08-18,Norway,MF,CM,,DM,2026,5.0,10.0,161.0,mls,mls
@@ -2129,7 +2133,7 @@ zeQZkYnxMK,Laila Harbert,2007-01-03,England,FW,W,MF,CM,2025,5.0,5.0,126.0,nwsl,n
 BLMv1GlQxe,Albert Rusnák,1994-07-07,Slovakia,MF,AM,,,"['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026']",5.0,9.0,135.0,mls,mls
 BLMv64lMxe,Adolfo Bautista,1979-05-15,Mexico,FW,ST,MF,W,2014,6.0,0.0,168.0,mls,mls
 BLMv64wlMx,Duran Michael Ferree,2006-09-28,USA,GK,GK,,,"['2025', '2026']",6.0,0.0,165.0,mls,mls
-BLMv6ZyRMx,Niko Tsakiris,2005-06-19,USA,MF,DM,,AM,"['2022', '2023', '2024', '2025', '2026']",5.0,7.0,154.0,mls,mls
+BLMv6ZyRMx,Niko Tsakiris,2005-06-19,USA,MF,AM,,DM,"['2022', '2023', '2024', '2025', '2026']",5.0,7.0,154.0,mls,mls
 BLMv6dWAMx,Andrew Baiera,2007-02-28,USA,DF,FB,MF,W,2026,,,,mls,mls
 BLMv6j1AMx,Djé D'Avilla,2003-05-05,Ivory Coast,MF,DM,,CM,"['2025', '2026']",6.0,3.0,170.0,mls,mls
 BLMv6jROMx,Julián Fernández,2004-01-30,Argentina,MF,W,,,"['2023', '2024', '2025']",,,,mls,mls
@@ -2163,6 +2167,7 @@ BLMva87Qxe,Roman Bürki,1990-11-14,Switzerland,GK,GK,,,"['2023', '2024', '2025',
 BLMvkAAR5x,Danley Jean Jacques,2000-05-20,Haiti,MF,CM,,,"['2024', '2025', '2026']",,,,mls,mls
 BLMvkbEl5x,Elliot Collier,1995-02-22,New Zealand,MF,W,,,"['2018', '2020', '2021']",6.0,4.0,179.0,mls,mls
 BLMvkbRO5x,Luis Argudo,1995-12-13,USA,MF,W,,,"['2018', '2019', '2020']",5.0,9.0,150.0,mls,mls
+BLMvl1JWqx,Allan Saint-Maximin,1997-03-12,France,MF,W,,,2026,5.0,8.0,148.0,mls,mls
 BLMvl1yAqx,Favio Álvarez,1993-01-23,Argentina,MF,AM,,,2019,6.0,0.0,154.0,mls,mls
 BLMvl7ORqx,Brian Sylvestre,1992-12-19,Haiti,GK,GK,,,2015,6.0,5.0,201.0,mls,mls
 BLMvlJ83qx,Ager Aketxe,1993-12-30,Spain,MF,CM,,,2018,5.0,9.0,152.0,mls,mls
@@ -2177,6 +2182,7 @@ BLMvlnkBqx,Michael Gamble,1994-01-05,USA,,,,,{},5.0,7.0,161.0,mls,mls
 BLMvlxpAqx,Akira Fitzgerald,1987-07-17,Japan,,,,,{},5.0,11.0,174.0,mls,mls
 BLMvly1Oqx,Milos Degenek,1994-04-28,Australia,DF,CB,,,"['2022', '2023']",6.0,2.0,181.0,mls,mls
 BLMvnEjMxe,Federico Higuaín,1984-10-24,Argentina,MF,AM,,,"['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021']",5.0,8.0,165.0,mls,mls
+BLMvrD73Mx,Kimito Nono,2002-03-26,Japan,MF,W,,,2026,5.0,10.0,148.0,mls,mls
 BLMvrLxjMx,Matías Gallardo,2003-11-24,Argentina,,,,,{},,,,mls,mls
 BLMvrNXMxe,Tim Howard,1979-03-06,USA,GK,GK,,,"['2016', '2017', '2018', '2019']",6.0,2.0,194.0,mls,mls
 BLMvrwBMxe,Justin Mapp,1984-10-18,USA,MF,W,,,"['2013', '2014', '2015', '2016']",5.0,10.0,163.0,mls,mls
@@ -2464,11 +2470,11 @@ KXMe4l1Q64,Alejandro Bedoya,1987-04-29,USA,MF,CM,,,"['2016', '2017', '2018', '20
 KXMe87ZPQ6,Ralph Priso,2002-08-02,Canada,MF,DM,,,"['2020', '2021', '2022', '2023', '2024', '2025', '2026']",5.0,9.0,170.0,mls,mls
 KXMe8BVrQ6,Jefferson Valverde,1999-05-04,Ecuador,DF,FB,,,2024,,,,mls,mls
 KXMe8EJ6Q6,Pedro Vite,2002-03-09,Ecuador,MF,CM,,,"['2022', '2023', '2024', '2025']",5.0,6.0,152.0,mls,mls
-KXMe8EW1Q6,Daryl Dike,2000-06-03,USA,FW,ST,,,"['2020', '2021']",6.0,2.0,,mls,mls
+KXMe8EW1Q6,Daryl Dike,2000-06-03,USA,FW,ST,,,"['2020', '2021', '2026']",6.0,2.0,,mls,mls
 KXMe8EkQ64,Lewis Neal,1981-07-14,England,MF,W,,,"['2013', '2014', '2015']",5.0,11.0,157.0,mls,mls
 KXMe8JD2Q6,Pedro Amador,1998-12-18,Portugal,DF,FB,,,"['2024', '2025', '2026']",5.0,11.0,161.0,mls,mls
 KXMe8JN3Q6,Julio Benitez,2005-07-30,USA,,,,,{},5.0,8.0,139.0,mls,mls
-KXMe8OnPQ6,Przemyslaw Placheta,1998-03-23,Poland,DF,FB,,,2026,5.0,10.0,159.0,mls,mls
+KXMe8OnPQ6,Przemyslaw Placheta,1998-03-23,Poland,DF,FB,MF,CM,2026,5.0,10.0,159.0,mls,mls
 KXMe8WD1Q6,Facundo Farías,2002-08-28,Argentina,FW,W,,ST,2023,,,,mls,mls
 KXMe8Y2vQ6,Justin Che,2003-11-18,USA,DF,FB,,CB,"['2021', '2026']",5.0,4.0,159.0,mls,mls
 KXMe8YjPQ6,Edwin Mosquera,2001-06-27,Colombia,MF,W,,,"['2022', '2023', '2024', '2025']",5.0,7.0,128.0,mls,mls
@@ -2521,7 +2527,7 @@ KXMexaXQ64,Clint Dempsey,1983-03-09,USA,FW,ST,MF,AM,"['2013', '2014', '2015', '2
 N6Mm4oWQEG,Jhon Kennedy Hurtado,1984-05-16,Colombia,DF,CB,,,"['2013', '2014']",6.0,0.0,185.0,mls,mls
 N6Mm70bZqE,Jaime Frias,1993-02-18,USA,DF,FB,,,2013,5.0,11.0,163.0,mls,mls
 N6Mm73xgqE,Tyler Rudy,1993-09-29,USA,,,,,{},5.0,9.0,161.0,mls,mls
-N6Mm76gZqE,Josef Martínez,1993-05-19,Venezuela,FW,ST,,,"['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025']",5.0,8.0,150.0,mls,mls
+N6Mm76gZqE,Josef Martínez,1993-05-19,Venezuela,FW,ST,,,"['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026']",5.0,8.0,150.0,mls,mls
 N6Mm76oZqE,Rafael Garcia,1988-12-19,USA,MF,DM,,,"['2013', '2014', '2015', '2016', '2017']",5.0,6.0,152.0,mls,mls
 N6Mm78LWqE,Rafael Czichos,1990-05-14,Germany,DF,CB,,,"['2022', '2023', '2024']",6.0,2.0,190.0,mls,mls
 N6Mm7DkwqE,Emerson Hyndman,1996-04-09,USA,MF,CM,,,"['2019', '2020', '2021', '2022']",5.0,7.0,135.0,mls,mls
@@ -2602,6 +2608,7 @@ NPqxAP6gQ9,Archie Goodwin,2004-11-07,Australia,FW,ST,,,"['2025', '2026']",,,,mls
 NPqxAp4mQ9,Fidel Barajas,2006-04-05,USA,MF,W,,,"['2024', '2025']",,,,mls,mls
 NPqxArZjQ9,Ademar Chavez,2009-01-12,USA,,,,,{},,,,mls,mls
 NPqxEKxQ9d,David Ousted,1985-02-01,Denmark,GK,GK,,,"['2013', '2014', '2015', '2016', '2017', '2018', '2019']",6.0,4.0,196.0,mls,mls
+NPqxK1EW59,El Hadji Samb,,USA,,,,,{},,,,mls,mls
 NPqxKmJZ59,Fricio Caicedo,2008-04-17,Ecuador,DF,CB,,,2026,6.0,2.0,159.0,mls,mls
 NPqxKnY859,Nonso Adimabua,2000-09-07,Nigeria,FW,ST,,,2026,6.0,4.0,190.0,mls,mls
 NPqxLzmq9d,John Goossens,1988-07-25,Netherlands,MF,W,,,"['2016', '2017']",5.0,9.0,170.0,mls,mls
@@ -2623,7 +2630,7 @@ NPqxeg1GQ9,Carlos Cermeño,1995-08-08,Venezuela,MF,DM,,,2017,5.0,5.0,143.0,mls,m
 NPqxej8gQ9,Pedro Baez,1997-01-15,Paraguay,FW,ST,,,2016,6.0,1.0,,mls,mls
 NPqxek9WQ9,Justin Dhillon,1995-06-06,USA,FW,ST,,,"['2019', '2020']",6.0,3.0,185.0,mls,mls
 NPqxemyWQ9,J.J. Koval,1992-05-19,USA,MF,CM,,,"['2014', '2015']",6.0,1.0,176.0,mls,mls
-NPqxen8gQ9,Adrián Marín,1997-01-09,Spain,DF,CB,,FB,"['2025', '2026']",5.0,11.0,161.0,mls,mls
+NPqxen8gQ9,Adrián Marín,1997-01-09,Spain,DF,FB,,CB,"['2025', '2026']",5.0,11.0,161.0,mls,mls
 NPqxepRmQ9,Ben Swanson,1997-07-18,USA,MF,DM,,,2016,5.0,6.0,130.0,mls,mls
 NPqxkJW59d,Todd Dunivant,1980-12-26,USA,DF,FB,,,"['2013', '2014', '2015']",6.0,1.0,176.0,mls,mls
 NPqxm12kQ9,Matt Van Oekel,1986-09-20,USA,GK,GK,,,2017,6.0,4.0,205.0,mls,mls
@@ -2645,7 +2652,7 @@ NPqxpG8q9d,Antonio Nocerino,1985-04-09,Italy,MF,DM,,CM,"['2016', '2017']",5.0,9.
 NPqxx0vXq9,Andre Reynolds,2001-05-02,USA,MF,W,DF,FB,"['2020', '2022']",5.0,9.0,154.0,mls,mls
 NPqxx41Gq9,Antoine Coupland,2003-12-12,Canada,FW,W,MF,W,2025,5.0,5.0,141.0,mls,mls
 NPqxx91gq9,Ajani Fortune,2002-12-30,Trinidad & Tobago,MF,CM,,DM,"['2023', '2024', '2025', '2026']",5.0,8.0,154.0,mls,mls
-NPqxxADjq9,Clay Holstad,2000-01-12,USA,MF,DM,,,2026,6.0,0.0,,mls,mls
+NPqxxADjq9,Clay Holstad,2000-01-12,USA,MF,DM,,W,2026,6.0,0.0,,mls,mls
 NPqxxAvYq9,Gianfranco Facchineri,2002-04-27,Canada,,,,,{},6.0,0.0,185.0,mls,mls
 NPqxxLDkq9,Andrew Privett,2000-08-02,USA,DF,CB,,,"['2023', '2024', '2025', '2026']",,,,mls,mls
 NPqxxVnWq9,Jay Joshua Herdman,2004-08-14,New Zealand,FW,W,,,2024,5.0,7.0,139.0,mls,mls
@@ -2702,7 +2709,7 @@ NWMWeDYqlz,Nicolás Lodeiro,1989-03-21,Uruguay,MF,AM,,,"['2016', '2017', '2018',
 NWMWgLbEMl,Kevin Kelsy,2004-07-27,Venezuela,FW,ST,,,"['2024', '2025', '2026']",6.0,2.0,187.0,mls,mls
 NWMWgLvKMl,Dominik Chong Qui,2007-12-29,USA,DF,FB,,,2025,,,,mls,mls
 NWMWgjbEMl,Cole Jensen,2001-01-22,USA,,,,,{},6.0,5.0,194.0,mls,mls
-NWMWj8JzQl,Joran Gerbet,2001-06-30,France,MF,CM,,DM,2025,,,,mls,mls
+NWMWj8JzQl,Joran Gerbet,2001-06-30,France,MF,CM,,DM,"['2025', '2026']",,,,mls,mls
 NWMWj8bjQl,Pedro,2004-03-05,Brazil,,,,,{},,,,mls,mls
 NWMWj9DQlz,Justin Hoyte,1984-11-20,Trinidad & Tobago,DF,FB,,CB,2019,5.0,11.0,157.0,mls,mls
 NWMWjEGYQl,Michael Adedokun,2001-05-27,Nigeria,,,,,{},5.0,8.0,161.0,mls,mls
@@ -2835,6 +2842,7 @@ Oa5wYrOWQ1,Romario Ibarra,1994-09-24,Ecuador,FW,ST,MF,W,"['2018', '2019']",5.0,9
 Oa5wYrYWQ1,Matt Horth,1989-05-03,England,,,,,{},6.0,3.0,194.0,mls,mls
 Oa5wYyE8Q1,Ebenezer Ofori,1995-07-01,Ghana,MF,CM,,,"['2018', '2019']",5.0,8.0,154.0,mls,mls
 Oa5wZWXM14,Abel Aguilar,1985-01-06,Colombia,MF,DM,,,2018,6.0,1.0,181.0,mls,mls
+Oa5wd2W9q1,Mohamed Elias Achouri,1999-02-10,Tunisia,FW,W,,,2026,6.0,2.0,163.0,mls,mls
 Oa5wd4DXq1,Ran Binyamin,2004-02-06,Israel,MF,W,,,2026,,,,mls,mls
 Oa5wd77Xq1,Emmanuel Iwe,2000-12-09,USA,FW,W,,ST,2023,,,,mls,mls
 Oa5wd89Aq1,Heine Gikling Bruseth,2004-04-06,Norway,,,,,{},5.0,10.0,141.0,mls,mls
@@ -2842,7 +2850,7 @@ Oa5wdGwYq1,Tobias Szewcyk,2009-01-26,USA,,,,,{},,,,mls,mls
 Oa5wdYB9q1,Elias Manoel,2001-11-30,Brazil,FW,ST,,,"['2022', '2023', '2024']",,,,mls,mls
 Oa5wdglAq1,Aron John,2006-04-03,USA,MF,DM,,,2026,,,,mls,mls
 Oa5wdkVYq1,Jorge Cabezas,2003-09-06,Colombia,FW,ST,MF,W,2023,6.0,1.0,168.0,mls,mls
-Oa5wdol4q1,Maximo Carrizo,2008-02-28,USA,MF,AM,,W,"['2025', '2026']",,,,mls,mls
+Oa5wdol4q1,Maximo Carrizo,2008-02-28,USA,MF,AM,,,"['2025', '2026']",,,,mls,mls
 Oa5wdxN9q1,Nolan Norris,2005-02-17,USA,DF,CB,,FB,"['2023', '2024', '2025', '2026']",,,,mls,mls
 Oa5wm64Q14,Joaquin Velázquez,1975-08-11,Mexico,DF,CB,,,2013,5.0,11.0,181.0,mls,mls
 Oa5wpk4q14,David Edgar,1987-05-19,Canada,DF,CB,,,2016,6.0,3.0,190.0,mls,mls
@@ -2863,14 +2871,16 @@ OlMl9ZOw5L,Chase Gasper,1996-01-25,USA,DF,FB,,,"['2019', '2020', '2021', '2022',
 OlMl9eo45L,Jeanderson,1991-08-13,Brazil,DF,FB,,,2015,5.0,10.0,161.0,mls,mls
 OlMl9gDP5L,Kim Moon-Hwan,1995-08-01,South Korea,DF,FB,,,"['2021', '2022']",5.0,8.0,141.0,mls,mls
 OlMl9jG05L,Cory Burke,1991-12-28,Jamaica,FW,ST,,,"['2018', '2019', '2020', '2021', '2022', '2023', '2024']",6.0,4.0,181.0,mls,mls
+OlMl9jKy5L,Carlo Holse,1999-06-02,Denmark,MF,AM,,,2026,5.0,10.0,152.0,mls,mls
 OlMl9raD5L,José Rafael Hernández,1997-06-26,Venezuela,DF,FB,,,2018,5.0,7.0,154.0,mls,mls
 OlMl9zeE5L,Sam Vines,1999-05-31,USA,DF,FB,,,"['2018', '2019', '2020', '2021', '2024', '2025', '2026']",5.0,10.0,150.0,mls,mls
 OlMlB6eAqL,Amin Boudri,2004-09-29,Sweden,MF,AM,FW,W,2026,5.0,9.0,165.0,mls,mls
 OlMlB7yAqL,Jake Girdwood-Reich,2004-05-26,Australia,DF,CB,MF,CM,"['2024', '2025']",6.0,1.0,165.0,mls,mls
 OlMlBG0RqL,Santiago Suárez,2005-04-23,USA,,,,,{},6.0,4.0,172.0,mls,mls
 OlMlBKG4qL,Ahmed Qasem,2003-07-12,Sweden,MF,W,,,"['2025', '2026']",6.0,0.0,159.0,mls,mls
-OlMlBVn0qL,Marcus Caldeira,2004-10-14,Canada,FW,ST,,,2026,6.0,0.0,181.0,mls,mls
+OlMlBVn0qL,Marcus Caldeira,2004-10-14,Canada,FW,ST,MF,CM,2026,6.0,0.0,181.0,mls,mls
 OlMlBalgqL,Juan José Mina,2004-07-27,Colombia,DF,FB,,,2026,6.0,0.0,172.0,mls,mls
+OlMlBlzNqL,Decarlo Guerra,2008-02-01,USA,,,,,{},,,,mls,mls
 OlMlBn1yqL,Warren Madrigal,2004-07-24,Costa Rica,FW,ST,,,2026,,,,mls,mls
 OlMlLp4MLz,Ricardo Clark,1983-02-10,USA,MF,CM,,DM,"['2013', '2014', '2015', '2016', '2017', '2018', '2019']",5.0,10.0,161.0,mls,mls
 OlMlYJw5Lz,Alan Gordon,1981-10-16,USA,FW,ST,,,"['2013', '2014', '2015', '2016', '2017', '2018']",6.0,3.0,192.0,mls,mls
@@ -2957,7 +2967,7 @@ Pk5Le3JNqO,Jesús Castellano,2004-03-22,Venezuela,,,,,{},,,,mls,mls
 Pk5Le6BPqO,Antino Lopez,2002-05-21,USA,DF,CB,,,"['2024', '2025', '2026']",6.0,0.0,150.0,mls,mls
 Pk5Le7ZmqO,Braian Galván,2000-10-06,Argentina,DF,FB,MF,W,"['2020', '2021', '2023']",5.0,5.0,141.0,mls,mls
 Pk5LeBLLqO,Marco Angulo,2002-05-08,Ecuador,MF,CM,,,2023,5.0,8.0,139.0,mls,mls
-Pk5LeDgmqO,Mateusz Bogusz,2001-08-22,Poland,FW,W,,ST,"['2023', '2024', '2026']",5.0,9.0,152.0,mls,mls
+Pk5LeDgmqO,Mateusz Bogusz,2001-08-22,Poland,FW,W,,,"['2023', '2024', '2026']",5.0,9.0,152.0,mls,mls
 Pk5LeG0YqO,Quinn Sullivan,2004-03-27,USA,MF,W,FW,ST,"['2021', '2022', '2023', '2024', '2025', '2026']",5.0,11.0,152.0,mls,mls
 Pk5LeYlNqO,Conner Antley,1995-03-22,USA,DF,FB,,,"['2024', '2025', '2026']",6.0,0.0,174.0,mls,mls
 Pk5LedyLqO,Thiago Almada,2001-04-26,Argentina,MF,AM,,,"['2022', '2023', '2024']",5.0,7.0,137.0,mls,mls
@@ -2995,6 +3005,7 @@ Vj580vE58n,Clarence Goodson,1982-05-17,USA,DF,CB,,,"['2013', '2014', '2015', '20
 Vj581dmq8n,Zach Scott,1980-07-02,USA,DF,CB,,,"['2013', '2014', '2015', '2016']",5.0,11.0,176.0,mls,mls
 Vj5833JM8n,Nélson Haedo Valdez,1983-11-28,Paraguay,FW,ST,,,"['2015', '2016']",5.0,10.0,172.0,mls,mls
 Vj5834LM8n,Julio Baptista,1981-10-01,Brazil,FW,ST,,,2016,6.0,0.0,190.0,mls,mls
+Vj583o0rM8,Issah Haruna,2004-03-14,Ghana,,,,,{},5.0,7.0,,mls,mls
 Vj583wA4M8,Mamadou Billo Diop,2006-09-14,Senegal,FW,ST,DF,FB,2026,6.0,2.0,174.0,mls,mls
 Vj587nmM8n,Teal Bunbury,1990-02-27,USA,FW,ST,MF,W,"['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025']",6.0,2.0,176.0,mls,mls
 Vj58B64EQ8,Pablo Sisniega,1995-07-07,Mexico,GK,GK,,,"['2019', '2020', '2021', '2022', '2023', '2025', '2026']",6.0,3.0,176.0,mls,mls
@@ -3140,7 +3151,7 @@ Xj5Y47WlMb,Aiden Jarvis,2006-11-14,Antigua & Barbuda,,,,,{},,,,mls,mls
 Xj5Y4W1EMb,Ian Urkidi,2007-02-21,USA,,,,,{},,,,mls,mls
 Xj5Y4dAlMb,Diego García,2006-10-17,USA,MF,CM,,,2025,5.0,7.0,141.0,mls,mls
 Xj5Y4dXMbd,Bradley Orr,1982-11-01,England,DF,CB,,,2014,6.0,1.0,196.0,mls,mls
-Xj5Y4e3xMb,Sebastian Gomez,2006-05-21,USA,MF,DM,,,2026,,,,mls,mls
+Xj5Y4e3xMb,Sebastian Gomez,2006-05-21,USA,MF,W,,DM,2026,,,,mls,mls
 Xj5Y4k8RMb,Richard Chukwu,2008-02-25,Canada,DF,CB,,,2026,,,,mls,mls
 Xj5Y4mJXMb,Ian Glavinovich,2001-10-27,Argentina,DF,CB,,,2025,6.0,0.0,,mls,mls
 Xj5Y60Kxqb,Miki Yamane,1993-12-22,Japan,DF,FB,,,"['2024', '2025', '2026']",5.0,10.0,159.0,mls,mls
@@ -3205,7 +3216,7 @@ Xj5YpDAMbd,Ryan Guy,1985-09-05,USA,MF,W,,,2013,5.0,7.0,161.0,mls,mls
 Xj5YrKyqbd,Chris Konopka,1985-04-14,USA,GK,GK,,,2015,6.0,5.0,216.0,mls,mls
 Xj5YrdRqbd,Brad Evans,1985-04-20,USA,DF,CB,,,"['2013', '2014', '2015', '2016', '2017']",6.0,1.0,172.0,mls,mls
 Xj5Yrryqbd,Maurice Edu,1986-04-18,USA,DF,CB,MF,DM,"['2014', '2015']",6.0,1.0,181.0,mls,mls
-Xj5YyNjE5b,Yannick Bright,2001-09-03,Italy,MF,DM,,CM,"['2024', '2025', '2026']",6.0,0.0,,mls,mls
+Xj5YyNjE5b,Yannick Bright,2001-09-03,Italy,MF,CM,,DM,"['2024', '2025', '2026']",6.0,0.0,,mls,mls
 Xj5YyZOw5b,Olwethu Makhanya,2004-04-30,South Africa,DF,CB,,,"['2025', '2026']",,,,mls,mls
 Xj5Yyz3y5b,Jayden Da,2002-04-08,USA,FW,ST,,,2026,6.0,3.0,,mls,mls
 Z315V3nq9x,Steven Gerrard,1980-05-30,England,MF,CM,,,"['2015', '2016']",6.0,1.0,181.0,mls,mls
@@ -3488,7 +3499,7 @@ eV5DkvNOMK,Stuart Hawkins,2006-09-18,USA,DF,CB,,,"['2025', '2026']",6.0,0.0,146.
 eV5DkwDaMK,Jack Neeley,2005-03-11,USA,DF,FB,,,2025,6.0,1.0,170.0,mls,mls
 eV5DkxpAMK,Nariman Akhundzade,2004-04-23,Azerbaijan,MF,W,,,2026,,,,mls,mls
 eV5Dky89MK,Nelson Palacio,2001-06-16,Colombia,MF,DM,,CM,"['2023', '2024', '2025']",5.0,9.0,176.0,mls,mls
-eV5DkyKOMK,Elias Saad,1999-12-27,Tunisia,MF,W,,,2026,6.0,1.0,176.0,mls,mls
+eV5DkyKOMK,Elias Saad,1999-12-27,Tunisia,MF,CM,,W,2026,6.0,1.0,176.0,mls,mls
 eV5DpPa5Kn,Robert Lewandowski,1988-08-21,Poland,FW,ST,,,2026,6.0,0.0,176.0,mls,mls
 eV5DxNn5Kn,Toni Dovale,1990-04-04,Spain,FW,W,,,2014,5.0,8.0,154.0,mls,mls
 eV5Dy9OqKn,Gabriel Torres,1988-10-31,Panama,FW,ST,MF,W,"['2013', '2014', '2015']",5.0,11.0,165.0,mls,mls
@@ -3523,6 +3534,7 @@ eVq3a8ajMW,Charles Eloundou,1994-12-04,Cameroon,MF,W,,,"['2014', '2015']",5.0,7.
 eVq3aGEwMW,Devon Sandoval,1991-06-16,USA,FW,ST,,,"['2013', '2014', '2015', '2016']",6.0,1.0,185.0,mls,mls
 eVq3aLDvMW,Alvin Jones,1994-09-07,Trinidad & Tobago,DF,FB,,,2020,,,,mls,mls
 eVq3aLbnMW,Nicolás Figal,1994-04-03,Argentina,DF,CB,,,"['2020', '2021']",5.0,11.0,141.0,mls,mls
+eVq3aOPvMW,Vincent Janssen,1994-06-15,Netherlands,MF,DM,,,2026,5.0,11.0,174.0,mls,mls
 eVq3aVY6MW,Michael Petrasso,1995-07-09,Canada,DF,FB,,,2018,5.0,7.0,141.0,mls,mls
 eVq3aaDGMW,David Rocha,1985-02-07,Spain,MF,DM,,W,2016,5.0,10.0,170.0,mls,mls
 eVq3aaXVMW,James Bissue,1991-06-15,Ghana,,,,,{},6.0,0.0,161.0,mls,mls
@@ -3559,6 +3571,7 @@ eVq3jedy5W,Rob Vincent,1990-10-26,England,MF,DM,,CM,"['2016', '2017']",5.0,10.0,
 eVq3jgbX5W,Samba,1992-09-23,Guinea-Bissau,DF,CB,,,2016,6.0,1.0,154.0,mls,mls
 eVq3jlOX5W,Arun Basuljevic,1995-12-17,USA,,,,,{},5.0,10.0,150.0,mls,mls
 eVq3jmnV5W,David Martínez,1998-01-21,Argentina,DF,CB,,,"['2024', '2025']",5.0,11.0,181.0,mls,mls
+eVq3jn1g5W,Youssef Maziz,1998-06-24,France,MF,DM,,,2026,5.0,9.0,,mls,mls
 eVq3jp0X5W,Kyle Venter,1991-03-13,USA,,,,,{},6.0,3.0,192.0,mls,mls
 eVq3jpxy5W,Will Pulisic,1998-04-16,USA,,,,,{},5.0,11.0,170.0,mls,mls
 eVq3jvxX5W,Rasheed Olabiyi,1990-08-08,Nigeria,MF,CM,,,2015,6.0,0.0,,mls,mls
@@ -3749,7 +3762,7 @@ gjMNRVXYMK,Silvester van der Water,1996-09-30,Netherlands,MF,W,,,"['2021', '2022
 gjMNRZE3MK,Stefan Cleveland,1994-05-25,USA,GK,GK,,,"['2018', '2021', '2022', '2023', '2026']",6.0,2.0,185.0,mls,mls
 gjMNRZZYMK,Ricardo Pérez,1995-05-30,USA,,,,,{},5.0,10.0,161.0,mls,mls
 gjMNReABMK,Marcelino Moreno,1994-06-25,Argentina,MF,AM,,,"['2020', '2021', '2022']",5.0,6.0,143.0,mls,mls
-gjMNRerBMK,Hirving Lozano,1995-07-30,Mexico,FW,W,,,2025,5.0,9.0,154.0,mls,mls
+gjMNRerBMK,Hirving Lozano,1995-07-30,Mexico,FW,W,,,"['2025', '2026']",5.0,9.0,154.0,mls,mls
 gjMNRl1pMK,Alex Gersbach,1997-05-08,Australia,DF,FB,,,2023,6.0,0.0,161.0,mls,mls
 gjMNRlApMK,Ronaldo Cisneros,1997-01-08,Mexico,FW,ST,,,2022,5.0,10.0,154.0,mls,mls
 gjMNRpYYMK,Gordon Wild,1995-10-16,Germany,MF,AM,FW,ST,2020,5.0,10.0,165.0,mls,mls
@@ -3804,7 +3817,7 @@ gpMOJRRQzy,Saphir Taïder,1992-02-29,Algeria,MF,CM,,,"['2018', '2019', '2020']",
 gpMOL01y5z,Lucas Sanabria,2003-12-26,Uruguay,MF,CM,,DM,"['2025', '2026']",5.0,10.0,161.0,mls,mls
 gpMOL0G15z,Matthew Bell,2002-08-27,Jamaica,MF,W,,,2024,6.0,0.0,,mls,mls
 gpMOL68O5z,Adolfo Enriquez,2006-04-16,USA,MF,AM,,,2024,,,,mls,mls
-gpMOLX225z,Joaquín Valiente,2001-04-13,Uruguay,MF,W,,AM,2026,5.0,5.0,148.0,mls,mls
+gpMOLX225z,Joaquín Valiente,2001-04-13,Uruguay,MF,AM,,W,2026,5.0,5.0,148.0,mls,mls
 gpMOLj2r5z,Nicklaus Sullivan,2002-07-21,USA,DF,FB,,,2025,,,,mls,mls
 gpMOLml5zy,Bastian Schweinsteiger,1984-08-01,Germany,DF,CB,,,"['2017', '2018', '2019']",6.0,0.0,174.0,mls,mls
 gpMOR92Qzy,Agustín Viana,1983-08-23,Uruguay,DF,FB,,,"['2013', '2014']",5.0,11.0,165.0,mls,mls
@@ -3936,7 +3949,7 @@ jYQJGvDMGR,Jørgen Skjelvik,1991-07-05,Norway,DF,CB,,FB,"['2018', '2019']",6.0,0
 jYQJNEyQGR,Haris Medunjanin,1985-03-08,Bosnia and Herzegovina,MF,DM,,,"['2017', '2018', '2019', '2020', '2021', '2022']",6.0,2.0,183.0,mls,mls
 jYQJOaZMGR,Osvaldo Alonso,1985-11-11,Cuba,MF,DM,,CM,"['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023']",5.0,11.0,157.0,mls,mls
 jYQJYXLkqG,Oliver Semmle,1998-03-28,Germany,GK,GK,,,2024,6.0,4.0,201.0,mls,mls
-jYQJYXpPqG,Tyrese Spicer,2000-12-04,Trinidad & Tobago,DF,FB,,,"['2024', '2025', '2026']",6.0,1.0,,mls,mls
+jYQJYXpPqG,Tyrese Spicer,2000-12-04,Trinidad & Tobago,DF,FB,MF,W,"['2024', '2025', '2026']",6.0,1.0,,mls,mls
 jYQJYy1BqG,Antonio Gomez,2001-12-15,USA,,,,,{},,,,mls,mls
 jYQJYzKDqG,Chris Applewhite,2007-08-23,USA,DF,CB,,,2025,,,,mls,mls
 jYQJZzEQGR,Joe Cannon,1975-01-01,USA,GK,GK,,,2013,6.0,2.0,201.0,mls,mls
@@ -4106,7 +4119,7 @@ ljqE2yXAQx,Emmanuel Appiah,1993-09-26,USA,MF,CM,,,2016,5.0,10.0,165.0,mls,mls
 ljqE83Y5x0,Anton Tinnerholm,1991-02-26,Sweden,DF,FB,,,"['2018', '2019', '2020', '2021', '2022']",5.0,9.0,150.0,mls,mls
 ljqE9aWVqx,Braudílio Rodrigues,1999-11-15,Guinea-Bissau,,,,,{},,,,mls,mls
 ljqE9kzoqx,Dieng Mamadou,2004-02-04,Senegal,FW,ST,,,"['2025', '2026']",6.0,2.0,170.0,mls,mls
-ljqEJ0okQx,Luka Jovanovic,2005-05-20,Australia,,,,,{},5.0,11.0,168.0,mls,mls
+ljqEJ0okQx,Luka Jovanovic,2005-05-20,Australia,MF,AM,,,2026,5.0,11.0,168.0,mls,mls
 ljqEJ8KkQx,Ian James,2008-06-06,USA,DF,CB,,,"['2025', '2026']",6.0,2.0,190.0,mls,mls
 ljqEJEozQx,Harbor Miller,2007-06-21,USA,MF,W,DF,FB,"['2025', '2026']",,,,mls,mls
 ljqEJEvzQx,Snyder Brunell,2007-03-23,USA,MF,DM,,,"['2025', '2026']",5.0,6.0,135.0,mls,mls
@@ -4121,7 +4134,7 @@ ljqEL93k5x,Tyler Freeman,2003-01-09,USA,,,,,{},5.0,10.0,143.0,mls,mls
 ljqELA3E5x,Matthew Hoppe,2001-03-13,USA,MF,W,,AM,2023,6.0,3.0,176.0,mls,mls
 ljqELGYo5x,William Reilly,2002-12-03,USA,MF,DM,,,"['2025', '2026']",5.0,1.0,154.0,mls,mls
 ljqELL0E5x,Ruben Messalles,2002-11-11,USA,,,,,{},,,,mls,mls
-ljqELLzz5x,Maxwell Murray,2002-04-08,USA,,,,,{},6.0,5.0,185.0,mls,mls
+ljqELLzz5x,Maxwell Murray,2002-04-08,USA,DF,CB,,,2026,6.0,5.0,185.0,mls,mls
 ljqELX2N5x,Finn Sundstrom,2006-11-19,USA,DF,FB,,,2026,,,,mls,mls
 ljqELaBw5x,Youba Diarra,1998-03-24,Mali,MF,CM,,DM,2021,5.0,10.0,174.0,mls,mls
 ljqELaO45x,Thomás Chacón,2000-08-17,Uruguay,MF,W,,,"['2019', '2020']",5.0,4.0,128.0,mls,mls
@@ -4321,7 +4334,7 @@ raMyArxkMd,Zeca,1994-05-16,Brazil,DF,FB,,,2022,5.0,7.0,150.0,mls,mls
 raMyAwplMd,Jeff Caldwell,1996-02-20,USA,,,,,{},6.0,3.0,192.0,mls,mls
 raMyAx7JMd,David Milinkovic,1994-05-20,Serbia,MF,W,,AM,2020,5.0,11.0,154.0,mls,mls
 raMyAyVlMd,Eduardo Sosa,1996-06-20,Venezuela,MF,AM,,,"['2018', '2019']",5.0,6.0,150.0,mls,mls
-raMyAywlMd,Miguel Almirón,1994-02-10,Paraguay,MF,AM,,,"['2017', '2018', '2025', '2026']",5.0,9.0,154.0,mls,mls
+raMyAywlMd,Miguel Almirón,1994-02-10,Paraguay,MF,AM,,W,"['2017', '2018', '2025', '2026']",5.0,9.0,154.0,mls,mls
 raMyDGeQd2,Dilly Duka,1989-12-15,USA,MF,W,,,"['2013', '2014', '2015', '2016', '2017']",5.0,9.0,161.0,mls,mls
 raMyDbBQd2,Daneil Cyrus,1990-12-15,Trinidad & Tobago,DF,CB,,FB,2015,6.0,3.0,152.0,mls,mls
 raMyDodQd2,Bryan Oviedo,1990-02-18,Costa Rica,DF,FB,,,"['2022', '2023', '2024']",5.0,8.0,152.0,mls,mls
@@ -4440,7 +4453,7 @@ vzqoWbkqap,Luis Robles,1984-05-11,USA,GK,GK,,,"['2013', '2014', '2015', '2016', 
 vzqoYOBMap,Andrés Imperiale,1986-07-08,Argentina,DF,CB,,,"['2016', '2017']",6.0,1.0,172.0,mls,mls
 vzqod6okQa,Curtis Ofori,2005-11-20,USA,,,,,{},5.0,7.0,128.0,mls,mls
 vzqod7xBQa,Shapi Suleymanov,1999-12-16,Russia,MF,W,FW,W,"['2025', '2026']",5.0,7.0,146.0,mls,mls
-vzqod8K7Qa,Kyogo Furuhashi,1995-01-20,Japan,FW,W,,,2026,5.0,7.0,139.0,mls,mls
+vzqod8K7Qa,Kyogo Furuhashi,1995-01-20,Japan,FW,ST,,,2026,5.0,7.0,139.0,mls,mls
 vzqod90kQa,Andres Jasson,2002-01-17,USA,MF,W,DF,FB,"['2021', '2022', '2023', '2024']",5.0,9.0,,mls,mls
 vzqodD8ZQa,Quimi Ordoñez,2003-08-05,USA,FW,ST,,,"['2021', '2022', '2023']",6.0,2.0,159.0,mls,mls
 vzqodDYYQa,Gabriel Slonina,2004-05-15,USA,GK,GK,,,"['2021', '2022']",6.0,4.0,194.0,mls,mls
@@ -4521,6 +4534,7 @@ wvq9ed47qW,Brendan McSorley,2002-02-01,USA,MF,W,,,"['2024', '2025', '2026']",,,,
 wvq9edX1qW,Irakoze Donasiyano,1998-02-03,USA,MF,CM,,,2021,5.0,10.0,152.0,mls,mls
 wvq9edxmqW,Ian Smith,2002-07-16,USA,DF,FB,,,"['2025', '2026']",6.0,1.0,,mls,mls
 wvq9el3NqW,Max Anchor,2004-07-21,Canada,GK,GK,,,2022,,,,mls,mls
+wvq9elX1qW,Charles Gaffney,2003-07-29,USA,DF,FB,,,2026,5.0,9.0,150.0,mls,mls
 wvq9emNqWn,Andrea Pisanu,1982-01-07,Italy,MF,W,,,2013,5.0,8.0,159.0,mls,mls
 wvq9ena3qW,Jack Jasinski,2003-12-04,USA,DF,FB,,,2026,6.0,0.0,159.0,mls,mls
 wvq9epE3qW,Manny Perez,1999-02-19,USA,FW,ST,,,2021,6.0,0.0,150.0,mls,mls
@@ -4559,6 +4573,7 @@ xW5p46l5g1,Jerome Thiesson,1987-08-06,Switzerland,DF,FB,,,"['2017', '2018']",5.0
 xW5p4e95g1,Darrius Barnes,1986-12-24,USA,DF,FB,,,"['2013', '2014', '2015', '2016']",6.0,1.0,176.0,mls,mls
 xW5p4rJ5g1,Baggio Husidic,1987-05-19,USA,MF,CM,,W,"['2014', '2015', '2016', '2017', '2018']",6.0,1.0,161.0,mls,mls
 xW5p7L4KMg,Elías Baez,2004-10-18,Argentina,DF,FB,,,2026,,,,mls,mls
+xW5p7LWlMg,Luighi Hanri,2006-04-30,Brazil,FW,ST,,,2026,6.0,0.0,,mls,mls
 xW5p7YJBMg,Robert Turdean,2010-01-14,USA,,,,,{},5.0,7.0,,mls,mls
 xW5p7lPJMg,Andy Rojas,2005-12-05,Costa Rica,MF,CM,,,2026,,,,mls,mls
 xW5p7vJMg1,Nigel de Jong,1984-11-30,Netherlands,MF,DM,,CM,2016,5.0,9.0,159.0,mls,mls
@@ -4570,7 +4585,7 @@ xW5pKvlMg1,Gonzalo Higuaín,1987-12-10,Argentina,FW,ST,,,"['2020', '2021', '2022
 xW5pLxJ5g1,Darren O'Dea,1987-02-04,Republic of Ireland,DF,CB,,FB,2013,6.0,1.0,181.0,mls,mls
 xW5pXAl5g1,Abdoulie Mansally,1989-01-27,Gambia,DF,FB,,,"['2013', '2014', '2015', '2016']",5.0,10.0,161.0,mls,mls
 xW5pXjB5g1,Vadim Demidov,1986-10-10,Norway,DF,CB,,,2017,6.0,1.0,176.0,mls,mls
-xW5pYyddqg,Lineker Rodrigues,2002-03-12,Brazil,FW,ST,MF,AM,2026,,,,mls,mls
+xW5pYyddqg,Lineker Rodrigues,2002-03-12,Brazil,MF,AM,FW,ST,2026,,,,mls,mls
 xW5pZo6Qg1,Alain Rochat,1983-02-01,Switzerland,DF,FB,,,2013,6.0,0.0,172.0,mls,mls
 xW5pbAlQg1,Maxime Chanot,1989-11-21,Luxembourg,DF,CB,,,"['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025']",6.0,1.0,172.0,mls,mls
 xW5pdnLY5g,Juan Pablo Torres,1999-07-26,USA,MF,W,,,"['2019', '2020']",5.0,8.0,161.0,mls,mls
@@ -4623,7 +4638,7 @@ xW5pxyLJ5g,Bilal Duckett,1989-01-09,USA,DF,FB,,,2013,6.0,2.0,165.0,mls,mls
 xW5pxyYl5g,Victor Pineda,1993-05-15,USA,MF,W,,,2014,5.0,11.0,141.0,mls,mls
 xW5pxyxB5g,David Bingham,1989-10-19,USA,GK,GK,,,"['2013', '2015', '2016', '2017', '2018', '2019', '2020', '2022', '2023', '2025']",6.0,2.0,185.0,mls,mls
 xW5pxzbB5g,Waylon Francis,1990-09-20,Costa Rica,DF,FB,,,"['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021']",5.0,9.0,161.0,mls,mls
-xW5py2Jdqg,Markus Cimermancic,2004-10-01,Canada,DF,FB,MF,AM,"['2025', '2026']",,,,mls,mls
+xW5py2Jdqg,Markus Cimermancic,2004-10-01,Canada,DF,FB,,,"['2025', '2026']",,,,mls,mls
 xW5py60Jqg,Nicholas Slonina,2001-03-20,USA,,,,,{},6.0,3.0,196.0,mls,mls
 xW5py9o9qg,Richard Aman,2004-03-16,USA,,,,,{},,,,mls,mls
 xW5pyAAGqg,Anthony Ramirez,2005-12-22,USA,MF,DM,,W,"['2024', '2025']",,,,mls,mls
@@ -4643,6 +4658,7 @@ xW5pyx70qg,Tucker Lepley,2002-01-17,USA,MF,CM,,,"['2024', '2025']",5.0,4.0,126.0
 xW5pyyaJqg,Braian Ojeda,2000-06-27,Paraguay,MF,DM,,CM,"['2022', '2023', '2024', '2025', '2026']",5.0,8.0,152.0,mls,mls
 zeQZ0az5Kw,Michael Gspurning,1981-05-02,Austria,GK,GK,,,2013,6.0,5.0,209.0,mls,mls
 zeQZ1NbNqK,Kamil Castillo,2010-03-31,Dominican Republic,,,,,{},,,,mls,mls
+zeQZ1kEYqK,Famara Camara,2005-04-10,Senegal,,,,,{},6.0,1.0,,mls,mls
 zeQZ32rMKw,Marco Di Vaio,1976-07-15,Italy,FW,ST,,,"['2013', '2014']",5.0,11.0,174.0,mls,mls
 zeQZ73GYMK,Jordan Allen,1995-04-25,USA,FW,W,,,"['2014', '2015', '2016', '2017']",5.0,11.0,201.0,mls,mls
 zeQZ79JKMK,Kimarni Smith,1998-03-14,England,DF,FB,,,"['2021', '2022']",6.0,1.0,161.0,mls,mls
