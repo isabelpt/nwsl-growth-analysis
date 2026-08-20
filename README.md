@@ -20,7 +20,7 @@ data/
 output/                                # figures (.png) generated 
 ```
 
-The first two chains (`01`-`03` stadiums, `04`-`07` media) are independent and can be run in either order. Within each chain, run the notebooks in numeric order — each one reads the previous one's output from `data/`.
+I recommend running the notebooks in numeric order becuase each one reads the previous one's output from `data/`, except `01`-`03` stadiums, `04`-`07` media are independent and can be run separately if necessary. 
 
 All plotting notebooks (`03`, `06`, `07`, `08`, `09`) import a shared color theme from `plot_theme.py` (`set_mpl_theme()` for matplotlib, `style_plotly_fig()` for Plotly). 
 
