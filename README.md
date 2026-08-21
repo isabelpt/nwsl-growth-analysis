@@ -20,15 +20,15 @@ data/
 output/                                # figures (.png) generated 
 ```
 
-The first two chains (`01`-`03` stadiums, `04`-`07` media) are independent and can be run in either order. Within each chain, run the notebooks in numeric order — each one reads the previous one's output from `data/`.
+The two chains (`01`-`03` stadiums, `04`-`07` media) are independent and can be run in either order. Within each chain, run the notebooks in numeric order — each one reads the previous one's output from `data/`.
 
-All plotting notebooks (`03`, `06`, `07`, `08`, `09`) import a shared color theme from `plot_theme.py` (`set_mpl_theme()` for matplotlib, `style_plotly_fig()` for Plotly). 
+All plotting notebooks (`03`, `06`, `07`) import a shared color theme from `plot_theme.py` (`set_mpl_theme()` for matplotlib, `style_plotly_fig()` for Plotly). 
 
 | Notebook | Reads | Writes |
 |---|---|---|
 | `01_stadiums_pull` | ASA API, Wikipedia (live) | `data/raw/games_raw.csv`, `players_raw.csv`, `teams_raw.csv`, `stadia_raw.csv`, `stadiums_wiki_nwsl_raw.csv`, `stadiums_wiki_mls_raw.csv` |
 | `02_stadiums_clean` | files above | `data/processed/stadiums.csv`, `teams_clean.csv`, `games_clean.csv` |
-| `03_stadiums_analyze` | `data/processed/stadiums.csv`, `teams_clean.csv`, `games_clean.csv` | `output/stadiums_map_by_capacity.png`, `nwsl_avg_attendance_by_team.png`, `nwsl_avg_attendance_by_season.png` |
+| `03_stadiums_analyze` | `data/processed/stadiums.csv`, `teams_clean.csv`, `games_clean.csv` | `output/stadiums_map_by_capacity.png`, `nwsl_avg_attendance_by_team.png`, `nwsl_avg_attendance_by_season.png`, `output/nwsl_team_summary_table.csv` |
 | `04_media_pull` | MediaCloud API (live) | `data/raw/nwsl_articles_raw.csv` |
 | `05_media_clean` | `data/raw/nwsl_articles_raw.csv` | `data/processed/nwsl_articles_filtered.csv` |
 | `06_media_trends_analysis` | `data/processed/nwsl_articles_filtered.csv` | `output/nwsl_articles_by_media_outlet.png`, `nwsl_articles_trend_over_time.png`; `data/processed/monthly_peaks.csv`, `daily_peaks.csv` |
