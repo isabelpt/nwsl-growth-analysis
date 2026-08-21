@@ -20,7 +20,7 @@ data/
 output/                                # figures (.png) generated 
 ```
 
-The two chains (`01`-`03` stadiums, `04`-`07` media) are independent and can be run in either order. Within each chain, run the notebooks in numeric order — each one reads the previous one's output from `data/`.
+The two chains (`01`-`03` stadiums, `04`-`07` media) are independent and can be run in either order. Within each chain, run the notebooks in numeric order because each one reads the previous one's output from `data/`.
 
 All plotting notebooks (`03`, `06`, `07`) import a shared color theme from `plot_theme.py` (`set_mpl_theme()` for matplotlib, `style_plotly_fig()` for Plotly). 
 
@@ -37,7 +37,8 @@ All plotting notebooks (`03`, `06`, `07`) import a shared color theme from `plot
 ## Data
 
 - **Stadium/game data**: pulled live from the [American Soccer Analysis API](https://www.americansocceranalysis.com/) (`itscalledsoccer` package, no auth needed) plus scraped Wikipedia stadium tables. No API key required.
-- **Media coverage data**: pulled from the [MediaCloud API](https://www.mediacloud.org/). Requires an API key 
+- **Media coverage data**: pulled from the [MediaCloud API](https://www.mediacloud.org/). Requires an API key
+- **Youtube data**: pulled from [Youtube Data API v3](https://developers.google.com/youtube/v3). Requires an API key
 
 ## Running
 
