@@ -4,7 +4,7 @@ const STEPS = [
   {
     step: '01',
     title: 'Clean & merge',
-    text: 'Games, teams, and stadium tables from ASA and Wikipedia deduplicated and joined, with primary/secondary tenants resolved for every shared venue.',
+    text: 'Games, teams, and stadium tables from ASA and Wikipedia joined, with primary/secondary tenants identified for every shared venue.',
   },
   {
     step: '02',
@@ -14,12 +14,12 @@ const STEPS = [
   {
     step: '03',
     title: 'Linear & logistic regression',
-    text: 'Log(attendance) regressed on team success, market size, rivalry, stadium age, and distance from downtown; a parallel logistic model classifies above- vs. below-median crowds.',
+    text: 'Log(attendance) regressed on team success, market size, rivalry, stadium age, and distance from downtown.',
   },
   {
     step: '04',
     title: 'Peak detection & topic modeling',
-    text: 'scipy peak-detection flags statistically significant coverage spikes; LDA topic tagging on 8,328 headlines shows which topics drive those spikes.',
+    text: 'Scipy peak-detection flags statistically significant coverage spikes; LDA topic tagging on 8,328 headlines shows which topics drive those spikes.',
   },
 ]
 
@@ -29,8 +29,8 @@ export default function MethodSection() {
       <div className="max-w-5xl mx-auto px-6">
         <SectionHeading index="03" title="The Method" eyebrow="Approach" />
         <p className="max-w-2xl text-[var(--color-ink)]/85 leading-relaxed mb-10">
-          Two independent pipelinesy: game-level attendance
-          data (2016–2026, 2020 and 2021xcluded for COVID) feeds into the regression
+          Two independent pipelines: game-level attendance
+          data (2016–2026, 2020 and 2021 excluded for COVID) feeds into the regression
           analysis, while 8,328 media headlines (2012–2026) feeds the
           coverage and topic analysis. 
         </p>

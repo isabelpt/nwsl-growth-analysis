@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="border-t border-[var(--color-line)] py-10">
       <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <p className="font-mono-label text-[11px] text-[var(--color-ink)]/60">
-          American Soccer Analysis · Wikipedia · MediaCloud · YouTube Data API — full data sources &amp; methodology notes in the repo
+          Full data sources &amp; methodology notes in the repo
         </p>
         <div className="flex gap-4">
           <a
