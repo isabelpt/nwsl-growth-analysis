@@ -30,7 +30,10 @@ export default function TakeawaySection() {
          <div className="max-w-3xl mt-4 border-l-2 border-[var(--color-accent)] pl-5 py-1">
           <p className="font-mono-label text-[11px] text-[var(--color-primary)] mb-2">Next Steps —</p>
           <p className="leading-relaxed text-[var(--color-ink)]/85">
-            
+            These results show a correlation between stadium investment and attendance growth, but they don't prove causation.
+            Next steps would include a more robust attendance analysis, which is attempted in the second iteration of this project.
+            It would also be useful to tie together the two halves of this analysis, testing whether media growth predicts attendance gains the following season.
+            It is important to not that this analysis is somewhat limited by the facts that the NWSL is a young league, and that the COVID-19 pandemic disrupted the 2020 and 2021 seasons.
           </p>
         </div>
       </div>

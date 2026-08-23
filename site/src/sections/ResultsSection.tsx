@@ -96,28 +96,27 @@ export default function ResultsSection() {
           </div>
         </div>
 
-        {/* Closing beat: broadens from stadium attendance to league-wide media culture.
-            Topic modeling (coverage composition) and YouTube (upload growth) side by side
-            as two views of the same "attention is growing and diversifying" story. */}
+        {/* Topic modeling: coverage volume + composition, plus the star-power finding */}
         <div className="mb-14">
-          <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figures 5–6</p>
+          <FigureCard
+            src={topicMixByYear}
+            alt="LDA topic modeling of NWSL headlines shows coverage volume rising since 2018, with a shift from 'how to watch' logistics toward coaching storylines and competitive coverage"
+            label="Figure 5"
+            caption="LDA topic tagging on 8,328 headlines (2012-2024, 4 topics) shows coverage nearly tripling since 2018, with the mix shifting from 'how to watch' logistics toward coaching storylines and competitive coverage. Notably, the model — with no notion of 'players' — surfaced Megan Rapinoe and Alex Morgan's names among its own topic-defining vocabulary, a sign of how much individual star power still drives NWSL coverage."
+          />
+        </div>
+
+        {/* Closing beat: broadens from stadium attendance to league-wide culture */}
+        <div className="mb-14">
+          <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figure 6</p>
           <p className="font-serif-heading text-lg font-semibold text-[var(--color-primary-deep)] mb-3">
-            Demand for women's soccer content is growing and diversifying, a sign of a broader cultural shift that will continue to lift attendance.
+            Demand is growing for women's soccer content, a sign of a broader cultural shift that will continue to lift attendance.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <FigureCard
-              src={topicMixByYear}
-              alt="LDA topic modeling of NWSL headlines shows coverage volume rising since 2018, with dips after Olympic and crisis-driven spikes, and a shift from 'how to watch' logistics toward coaching storylines and competitive coverage"
-              label="Figure 5"
-              caption="LDA topic tagging on 8,328 headlines (2012-2024, 4 topics) shows coverage nearly tripling since 2018's post-Olympic lull, with the mix shifting from 'how to watch' logistics toward coaching storylines and competitive coverage. The 2018 and 2022 dips aren't missing data — both years simply revert after an external-event spike (the 2016 Rio Olympics and Portland's title run; the 2021 Tokyo Olympics and the NWSL abuse-crisis coverage). Notably, the model — with no notion of 'players' — surfaced Megan Rapinoe and Alex Morgan's names among its own topic-defining vocabulary, a sign of how much individual star power still drives NWSL coverage."
-            />
-            <FigureCard
-              src={youtubeRise}
-              alt="YouTube subscriber and view growth for women's soccer channels accelerates around major women's soccer milestones"
-              label="Figure 6"
-              caption="Independent women's-soccer media now outdraws the league's own channel: Just Women's Sports has 300K YouTube subscribers to the NWSL's official 250K, with four more dedicated channels behind them. Article coverage itself spikes around events the league doesn't control — the November 2024 peak (291 articles) was driven by USWNT-England buzz and expansion-city announcements, not a game result."
-            />
-          </div>
+          <FigureCard
+            src={youtubeRise}
+            alt="YouTube upload growth for women's soccer channels accelerates as independent channels launch and overtake the NWSL's own"
+            caption="Independent women's-soccer media now outdraws the league's own channel: Just Women's Sports has 300K YouTube subscribers to the NWSL's official 250K, with four more dedicated channels behind them, launched between 2019 and 2024. Independents' combined upload volume overtook the NWSL's own channel in 2021 and has kept pulling away since. Article coverage itself spikes around events the league doesn't control — the November 2024 peak (291 articles) was driven by USWNT-England buzz and expansion-city announcements, not a game result."
+          />
         </div>
 
         {/* Supporting figures
