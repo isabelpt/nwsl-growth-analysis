@@ -88,6 +88,7 @@ def set_mpl_theme():
         "axes.facecolor": COLOR_PAPER,
         "savefig.facecolor": COLOR_PAPER,
         "axes.grid": True,
+        "axes.axisbelow": True,
         "grid.color": COLOR_LINE,
         "grid.linewidth": 0.8,
         "grid.alpha": 1.0,

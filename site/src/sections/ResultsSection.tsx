@@ -8,6 +8,7 @@ import rivalryPremium from '../assets/figures/rivalry-premium.png'
 import marketSize from '../assets/figures/market-size.png'
 import olsRegression from '../assets/figures/ols-regression.png'
 import youtubeRise from '../assets/figures/youtube-rise.png'
+import topicMixByYear from '../assets/figures/topic-mix-by-year.png'
 // import awayDrawLift from '../assets/figures/away-draw-lift.png'
 // import capacityUtilization from '../assets/figures/capacity-utilization.png'
 
@@ -95,17 +96,28 @@ export default function ResultsSection() {
           </div>
         </div>
 
-        {/* Closing beat: broadens from stadium attendance to league-wide culture */}
+        {/* Closing beat: broadens from stadium attendance to league-wide media culture.
+            Topic modeling (coverage composition) and YouTube (upload growth) side by side
+            as two views of the same "attention is growing and diversifying" story. */}
         <div className="mb-14">
-          <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figure 5</p>
+          <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figures 5–6</p>
           <p className="font-serif-heading text-lg font-semibold text-[var(--color-primary-deep)] mb-3">
-            Demand is growing for women's soccer content, a sign of a broader cultural shift that will continue to lift attendance.
+            Demand for women's soccer content is growing and diversifying, a sign of a broader cultural shift that will continue to lift attendance.
           </p>
-          <FigureCard
-            src={youtubeRise}
-            alt="YouTube subscriber and view growth for women's soccer channels accelerates around major women's soccer milestones"
-            caption="Independent women's-soccer media now outdraws the league's own channel: Just Women's Sports has 300K YouTube subscribers to the NWSL's official 250K, with four more dedicated channels behind them. Article coverage itself spikes around events the league doesn't control — the November 2024 peak (291 articles) was driven by USWNT-England buzz and expansion-city announcements, not a game result."
-          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <FigureCard
+              src={topicMixByYear}
+              alt="LDA topic modeling of NWSL headlines shows coverage volume rising since 2018, with dips after Olympic and crisis-driven spikes, and a shift from 'how to watch' logistics toward coaching storylines and competitive coverage"
+              label="Figure 5"
+              caption="LDA topic tagging on 8,328 headlines (2012-2024, 4 topics) shows coverage nearly tripling since 2018's post-Olympic lull, with the mix shifting from 'how to watch' logistics toward coaching storylines and competitive coverage. The 2018 and 2022 dips aren't missing data — both years simply revert after an external-event spike (the 2016 Rio Olympics and Portland's title run; the 2021 Tokyo Olympics and the NWSL abuse-crisis coverage). Notably, the model — with no notion of 'players' — surfaced Megan Rapinoe and Alex Morgan's names among its own topic-defining vocabulary, a sign of how much individual star power still drives NWSL coverage."
+            />
+            <FigureCard
+              src={youtubeRise}
+              alt="YouTube subscriber and view growth for women's soccer channels accelerates around major women's soccer milestones"
+              label="Figure 6"
+              caption="Independent women's-soccer media now outdraws the league's own channel: Just Women's Sports has 300K YouTube subscribers to the NWSL's official 250K, with four more dedicated channels behind them. Article coverage itself spikes around events the league doesn't control — the November 2024 peak (291 articles) was driven by USWNT-England buzz and expansion-city announcements, not a game result."
+            />
+          </div>
         </div>
 
         {/* Supporting figures
