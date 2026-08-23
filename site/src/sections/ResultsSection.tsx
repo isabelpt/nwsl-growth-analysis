@@ -32,22 +32,22 @@ export default function ResultsSection() {
             attendance: career average home attendance (2020 excluded), most
             recent year-over-year change, 2025 capacity utilization, away-draw
             lift (how much a team boosts road attendance above the host's own
-            season baseline), and average season finish by points-per-game.
-            Portland leads on raw attendance; Washington Spirit posted the
-            largest 2025 gain (+26.6%) after its move to Audi Field; Kansas
-            City Current is effectively sold out in its purpose-built stadium.
+            season baseline), and average season finish by points-per-game. 
+            Highlights: Portland Thorns lead the league in raw attendance, 
+            Kansas City Current is sold out in its purpose-built stadium, 
+            and Washington Spirit posted the largest 2025 gain (+26.6%) after its move to Audi Field.
           </p>
         </div>
 
-        {/* Honeymoon effect — strongest, most surprising driver */}
+        {/* Honeymoon effect: strongest, most surprising driver */}
         <div className="mb-14">
           <FigureCard
             src={honeymoonEffect}
-            alt="A new stadium buys a team several seasons of sharply elevated attendance before it decays back toward baseline"
+            alt="A new stadium buys a team several seasons of sharply elevated attendance"
             label="Figure 1"
-            claim="A new stadium is worth more than a winning season."
-            benchmark="vs. MLS"
-            caption="Five active teams moved into a bigger or purpose-built venue since 2021 — Gotham FC, Washington Spirit, Seattle Reign, San Diego Wave, and Kansas City Current. Every one saw a jump, from +62% (Kansas City) to +136% (Gotham FC). In the regression, a new-stadium flag is worth an estimated +38% in attendance net of everything else — the single largest driver tested."
+            // claim="A new stadium is worth more than a winning season."
+            // benchmark="vs. MLS"
+            caption="Five teams moved into a new venue since 2021. In response, every team saw a jump, from +62% (Kansas City) to +136% (Gotham FC). In the regression, a new-stadium flag is worth an estimated +38% in attendance."
           />
         </div>
 
@@ -57,7 +57,7 @@ export default function ResultsSection() {
             src={rivalryPremium}
             alt="Rivalry matchups carry a significant, positive attendance premium over a team's same-season baseline"
             label="Figure 2"
-            claim="Rivalries sell tickets that standings don't."
+            // claim="Rivalries sell tickets that standings don't."
             caption="Seattle's home games against Portland — the Cascadia Rivalry — draw an average of 4,097 more fans than Seattle's own season baseline, across 17 meetings, the largest lift of any of the 73 matchups with at least 8 meetings. In the regression, a rivalry flag is worth an estimated +19% in attendance net of team quality and market controls."
           />
         </div>

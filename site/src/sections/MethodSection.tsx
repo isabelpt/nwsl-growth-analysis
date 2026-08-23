@@ -29,11 +29,10 @@ export default function MethodSection() {
       <div className="max-w-5xl mx-auto px-6">
         <SectionHeading index="03" title="The Method" eyebrow="Approach" />
         <p className="max-w-2xl text-[var(--color-ink)]/85 leading-relaxed mb-10">
-          Two independent pipelines feed one story: game-level attendance
-          data (2016–2026, 2020 excluded for COVID) drives the regression
-          analysis, while 8,328 media headlines (2012–2026) drive the
-          coverage and topic analysis. Both compare NWSL directly against
-          MLS wherever the data allows.
+          Two independent pipelinesy: game-level attendance
+          data (2016–2026, 2020 and 2021xcluded for COVID) feeds into the regression
+          analysis, while 8,328 media headlines (2012–2026) feeds the
+          coverage and topic analysis. 
         </p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {STEPS.map((s) => (
