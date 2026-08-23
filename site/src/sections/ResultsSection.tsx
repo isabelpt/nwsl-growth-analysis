@@ -8,8 +8,8 @@ import rivalryPremium from '../assets/figures/rivalry-premium.png'
 import marketSize from '../assets/figures/market-size.png'
 import olsRegression from '../assets/figures/ols-regression.png'
 import youtubeRise from '../assets/figures/youtube-rise.png'
-import awayDrawLift from '../assets/figures/away-draw-lift.png'
-import capacityUtilization from '../assets/figures/capacity-utilization.png'
+// import awayDrawLift from '../assets/figures/away-draw-lift.png'
+// import capacityUtilization from '../assets/figures/capacity-utilization.png'
 
 // Figures are ordered by narrative strength, not by pipeline order: the two
 // surprising positive drivers first, then a one-figure summary tying every
@@ -45,8 +45,6 @@ export default function ResultsSection() {
             src={honeymoonEffect}
             alt="A new stadium buys a team several seasons of sharply elevated attendance"
             label="Figure 1"
-            // claim="A new stadium is worth more than a winning season."
-            // benchmark="vs. MLS"
             caption="Five teams moved into a new venue since 2021. In response, every team saw a jump, from +62% (Kansas City) to +136% (Gotham FC). In the regression, a new-stadium flag is worth an estimated +38% in attendance."
           />
         </div>
@@ -58,7 +56,7 @@ export default function ResultsSection() {
             alt="Rivalry matchups carry a significant, positive attendance premium over a team's same-season baseline"
             label="Figure 2"
             // claim="Rivalries sell tickets that standings don't."
-            caption="Seattle's home games against Portland — the Cascadia Rivalry — draw an average of 4,097 more fans than Seattle's own season baseline, across 17 meetings, the largest lift of any of the 73 matchups with at least 8 meetings. In the regression, a rivalry flag is worth an estimated +19% in attendance net of team quality and market controls."
+            caption="Games in the Cascadia Rivalry (Seattle vs. Portland) hosted in Seattle, a team with low attendance overall, draw an average of 4,097 more fans than the team's own season baselines, across 17 meetings. In the regression, a rivalry flag is worth an estimated +19% in attendance."
           />
         </div>
 
@@ -72,27 +70,27 @@ export default function ResultsSection() {
         </div>
 
         <PullQuote>
-          The factors a league can build — stadiums, rivalries — outweigh the
-          factors it can't: market size, and even winning.
+          The factors investment can build outweigh the
+          factors it can't.
         </PullQuote>
 
         {/* Two-panel negative result: what doesn't predict attendance */}
         <div className="mb-14">
           <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figure 4</p>
           <p className="font-serif-heading text-lg font-semibold text-[var(--color-primary-deep)] mb-3">
-            What doesn't move the needle: market size and on-field success.
+            Market size and on-field success don't meaningfully influence attendance.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <FigureCard
               src={marketSize}
               alt="Market size is only weakly correlated with average attendance across teams"
-              benchmark="vs. MLS"
-              caption="Metro population barely correlates with attendance in either league (NWSL r=0.05, n=16; MLS r=-0.19, n=30). NYCFC and the Red Bulls sit in the largest metro in either league and draw fewer fans than Nashville, Charlotte, or Cincinnati — this isn't an NWSL quirk, it's true of MLS too."
+              //benchmark="vs. MLS"
+              caption="Metro population barely correlates with attendance in either league (NWSL r=0.05, n=16; MLS r=-0.19, n=30). New York City teams across the NWSL and MLS draw few fans than teams in much smaller markets."
             />
             <FigureCard
               src={olsRegression}
               alt="On-field success explains markedly less variance in attendance than stadium and rivalry effects do"
-              caption="Points-per-game correlates weakly with same-season attendance in both leagues (NWSL r=0.23, n=95; MLS r=0.16, n=288) — if anything, slightly more weakly in MLS. In the full regression, an extra point per game is worth an estimated +6.5% in attendance — real, but a fraction of the new-stadium or rivalry effect."
+              caption="Points-per-game correlates weakly with same-season attendance in both leagues (NWSL r=0.23, n=95; MLS r=0.16, n=288). In the full regression, an extra point per game is worth an estimated +6.5% in attendance, a small but real effect."
             />
           </div>
         </div>
@@ -101,7 +99,7 @@ export default function ResultsSection() {
         <div className="mb-14">
           <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figure 5</p>
           <p className="font-serif-heading text-lg font-semibold text-[var(--color-primary-deep)] mb-3">
-            The demand isn't confined to the stadium — it shows up in media, too.
+            Demand is growing for women's soccer content, a sign of a broader cultural shift that will continue to lift attendance.
           </p>
           <FigureCard
             src={youtubeRise}
@@ -110,7 +108,7 @@ export default function ResultsSection() {
           />
         </div>
 
-        {/* Supporting figures */}
+        {/* Supporting figures
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FigureCard
             src={awayDrawLift}
@@ -124,7 +122,7 @@ export default function ResultsSection() {
             label="Supporting"
             caption="Kansas City Current sold out CPKC Stadium — the first venue purpose-built for a women's pro sports team — at 100% capacity in 2025. Seattle Reign, by contrast, fills just 19% of the 38,500-seat Lumen Field it shares as the secondary tenant. Purpose-built, right-sized venues consistently outperform oversized shared ones."
           />
-        </div>
+        </div> */}
       </div>
     </section>
   )
