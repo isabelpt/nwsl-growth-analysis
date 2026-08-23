@@ -17,17 +17,16 @@ export default function Hero() {
               Research project · attendance economics
             </p>
             <h1 className="font-serif-heading text-4xl md:text-5xl font-semibold leading-tight text-[var(--color-primary-deep)]">
-              What Drives NWSL Attendance?
+              What Drives NWSL Attendance? Evidence of a Durable, Women’s Specific Sports Culture
             </h1>
             <p className="font-mono-label text-xs text-[var(--color-primary)] mt-4">
               By Isabel Prado-Tucker
             </p>
             <p className="mt-5 text-base text-[var(--color-ink)]/80 leading-relaxed max-w-md">
-              League-average home attendance nearly doubled in a decade — from
-              5,711 in 2016 to 10,243 in 2025. A stadium-by-stadium look at
-              what's actually filling those seats — and, benchmarked against
-              MLS, what it says about a durable, women's-specific sports
-              culture rather than a passing novelty.
+              Is NWSL attendance growth
+              explained by the same structural factors that drive attendance in established
+              men’s leagues (market size, on-field success) or does it reflect something more
+              durable and specific to women’s sports? We model the the influences on attendance in the NWSL compared to the MLS to find the answer.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
@@ -58,9 +57,7 @@ export default function Hero() {
               </p>
               <div className="flex flex-wrap gap-2">
                 <Tag>OLS regression</Tag>
-                <Tag>Event-study design</Tag>
                 <Tag>Topic modeling</Tag>
-                <Tag>Peak detection</Tag>
               </div>
             </div>
           </div>
