@@ -4,7 +4,7 @@ import Tag from '../components/Tag'
 const SOURCES = [
   {
     name: 'American Soccer Analysis API',
-    detail: 'Match data, player rosters per season, team, and stadium data via the itscalledsoccer python wrapper. Aggregated match-level data to team-season and team-game datasets. NWSL data starts in 2026, so all data cropped to begin that year.',
+    detail: 'Match data, player rosters per season, team, and stadium data via the itscalledsoccer python wrapper. Aggregated match-level data to team-season and team-game datasets. NWSL data starts in 2016, so all data cropped to begin that year.',
     tags: ['Games', 'Teams', 'Players'],
   },
   {

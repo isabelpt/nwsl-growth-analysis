@@ -9,7 +9,7 @@ export default function QuestionSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-4 text-[var(--color-ink)]/85 leading-relaxed">
             <p>
-              The NWSL has grown quickly since its inaugural season in 2023,
+              The NWSL has grown quickly since its inaugural season in 2013,
               but the growth is uneven across the league. Most agree that the league's
               growth is durable, but the factors driving that growth have not been rigorously studied. 
               This project aims to fill that gap by analyzing the factors that drive attendance in the NWSL, 
