@@ -28,11 +28,14 @@ export default function ResultsSection() {
           </p>
           <SummaryTable />
           <p className="text-sm text-[var(--color-ink)]/70 leading-relaxed mt-3 max-w-2xl">
-            The top eight teams by career average home attendance (2020
-            excluded), each team's most recent year-over-year change, and its
-            share of total 2025 league attendance. Portland leads on raw
-            attendance; Washington Spirit posted the largest 2025 gain
-            (+26.6%) after its move to Audi Field.
+            All 16 active NWSL teams, ranked by share of 2025 league
+            attendance: career average home attendance (2020 excluded), most
+            recent year-over-year change, 2025 capacity utilization, away-draw
+            lift (how much a team boosts road attendance above the host's own
+            season baseline), and average season finish by points-per-game.
+            Portland leads on raw attendance; Washington Spirit posted the
+            largest 2025 gain (+26.6%) after its move to Audi Field; Kansas
+            City Current is effectively sold out in its purpose-built stadium.
           </p>
         </div>
 
