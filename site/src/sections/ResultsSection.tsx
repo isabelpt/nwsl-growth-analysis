@@ -27,7 +27,14 @@ export default function ResultsSection() {
           <p className="font-mono-label text-xs text-[var(--color-primary)] mb-3">
             Table 1 — attendance, away-draw lift &amp; capacity by team
           </p>
-          <SummaryTable />
+          {/* Full-bleed breakout: the table needs more room than the 5xl reading
+              column gives it, so it escapes to (near) full viewport width here
+              and re-centers, instead of forcing a horizontal scrollbar. */}
+          <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen flex justify-center">
+            <div className="w-full max-w-[1600px] px-6">
+              <SummaryTable />
+            </div>
+          </div>
           <p className="text-sm text-[var(--color-ink)]/70 leading-relaxed mt-3 max-w-2xl">
             All 16 active NWSL teams, ranked by share of 2025 league
             attendance: career average home attendance (2020 excluded), most

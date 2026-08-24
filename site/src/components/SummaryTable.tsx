@@ -19,21 +19,25 @@ type Column = {
   align: 'left' | 'right'
   /** Lower-is-better metrics (like rank) should default to ascending on first click. */
   defaultAsc?: boolean
+  /** Column width as a percentage. A fixed table layout (widths sum to 100%) is what
+   *  lets every column shrink to fit the viewport instead of forcing a horizontal
+   *  scrollbar — headers wrap onto a second line rather than pushing the table wider. */
+  width: number
 }
 
 const columns: Column[] = [
-  { key: 'team', label: 'Team', align: 'left', defaultAsc: true },
-  { key: 'yearsInLeague', label: 'Years in league', align: 'right' },
-  { key: 'avgAttendance', label: 'Avg. attendance', align: 'right' },
-  { key: 'yoyPct', label: '2025 YoY %', align: 'right' },
-  { key: 'shareOfLeaguePct', label: 'Share of league, 2025', align: 'right' },
-  { key: 'capacityUtilizationPct', label: 'Capacity utilization, 2025', align: 'right' },
-  { key: 'awayDrawLift', label: 'Away draw lift', align: 'right' },
-  { key: 'avgSeasonRank', label: 'Avg. season rank', align: 'right', defaultAsc: true },
+  { key: 'team', label: 'Team', align: 'left', defaultAsc: true, width: 22 },
+  { key: 'yearsInLeague', label: 'Years in league', align: 'right', width: 9 },
+  { key: 'avgAttendance', label: 'Avg. attendance', align: 'right', width: 12 },
+  { key: 'yoyPct', label: '2025 YoY %', align: 'right', width: 10 },
+  { key: 'shareOfLeaguePct', label: 'Share of league, 2025', align: 'right', width: 12 },
+  { key: 'capacityUtilizationPct', label: 'Capacity utilization, 2025', align: 'right', width: 12 },
+  { key: 'awayDrawLift', label: 'Away draw lift', align: 'right', width: 13 },
+  { key: 'avgSeasonRank', label: 'Avg. season rank', align: 'right', defaultAsc: true, width: 10 },
 ]
 
-const th = 'font-mono-label text-[11px] font-medium text-[var(--color-primary)] px-4 py-3 whitespace-nowrap'
-const td = 'px-4 py-3 text-right font-mono whitespace-nowrap'
+const th = 'font-mono-label text-[10px] lg:text-[11px] font-medium text-[var(--color-primary)] px-2 lg:px-3 py-3 leading-tight'
+const td = 'px-2 lg:px-3 py-3 text-right font-mono text-[13px] lg:text-sm whitespace-nowrap overflow-hidden text-ellipsis'
 
 function fmtPct(v: number | null, digits = 1) {
   if (v === null) return '—'
@@ -79,8 +83,13 @@ export default function SummaryTable() {
   }
 
   return (
-    <div className="border border-[var(--color-line)] bg-[var(--color-paper)] shadow-offset-sm overflow-x-auto">
-      <table className="w-full text-sm border-collapse min-w-[980px]">
+    <div className="border border-[var(--color-line)] bg-[var(--color-paper)] shadow-offset-sm">
+      <table className="w-full text-sm border-collapse table-fixed">
+        <colgroup>
+          {columns.map((col) => (
+            <col key={col.key} style={{ width: `${col.width}%` }} />
+          ))}
+        </colgroup>
         <thead>
           <tr className="border-b border-[var(--color-line)] bg-[var(--color-paper-alt)]">
             {columns.map((col) => {
@@ -92,9 +101,9 @@ export default function SummaryTable() {
                   onClick={() => handleSort(col)}
                   aria-sort={active ? (sortAsc ? 'ascending' : 'descending') : 'none'}
                 >
-                  <span className={col.align === 'right' ? 'inline-flex items-center justify-end gap-1' : 'inline-flex items-center gap-1'}>
-                    {col.label}
-                    <span className={`text-[9px] ${active ? 'opacity-100' : 'opacity-25'}`}>
+                  <span className={col.align === 'right' ? 'inline-flex items-start justify-end gap-1' : 'inline-flex items-start gap-1'}>
+                    <span>{col.label}</span>
+                    <span className={`text-[9px] shrink-0 ${active ? 'opacity-100' : 'opacity-25'}`}>
                       {active ? (sortAsc ? '▲' : '▼') : '▲▼'}
                     </span>
                   </span>
@@ -109,7 +118,7 @@ export default function SummaryTable() {
               key={row.team}
               className={i !== sorted.length - 1 ? 'border-b border-[var(--color-line)]' : ''}
             >
-              <td className="px-4 py-3 font-serif-heading text-[var(--color-primary-deep)] whitespace-nowrap">
+              <td className="px-2 lg:px-3 py-3 font-serif-heading text-[13px] lg:text-sm text-[var(--color-primary-deep)] whitespace-nowrap overflow-hidden text-ellipsis">
                 {row.team}
                 {row.partialSeason || row.smallSample ? ' ★' : ''}
               </td>
