@@ -27,11 +27,12 @@ export default function ResultsSection() {
           <p className="font-mono-label text-xs text-[var(--color-primary)] mb-3">
             Table 1 — attendance, away-draw lift &amp; capacity by team
           </p>
-          {/* Full-bleed breakout: the table needs more room than the 5xl reading
-              column gives it, so it escapes to (near) full viewport width here
-              and re-centers, instead of forcing a horizontal scrollbar. */}
+          {/* Slight breakout: the table needs a bit more room than the 5xl reading
+              column gives it, so it escapes that constraint and re-centers at a
+              width sized to its content — not full viewport, or the columns end
+              up mostly empty padding. */}
           <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen flex justify-center">
-            <div className="w-full max-w-[1600px] px-6">
+            <div className="w-full max-w-[1000px] px-6">
               <SummaryTable />
             </div>
           </div>
