@@ -1,5 +1,6 @@
 import SectionHeading from '../components/SectionHeading'
-import FigureCard from '../components/FigureCard'
+import FigureSpread from '../components/FigureSpread'
+import FigureToggle from '../components/FigureToggle'
 import SummaryTable from '../components/SummaryTable'
 import EffectSizeChart from '../components/EffectSizeChart'
 import PullQuote from '../components/PullQuote'
@@ -38,34 +39,53 @@ export default function ResultsSection() {
           </div>
           <p className="text-sm text-[var(--color-ink)]/70 leading-relaxed mt-3 max-w-2xl">
             All 16 active NWSL teams, ranked by share of 2025 league
-            attendance: career average home attendance (2020 excluded), most
-            recent year-over-year change, 2025 capacity utilization, away-draw
-            lift (how much a team boosts road attendance above the host's own
-            season baseline), and average season finish by points-per-game. 
-            Highlights: Portland Thorns lead the league in raw attendance, 
-            Kansas City Current is sold out in its purpose-built stadium, 
-            and Washington Spirit posted the largest 2025 gain (+26.6%) after its move to Audi Field.
+            attendance. Away-draw lift is how much a team boosts road
+            attendance above the host's own season baseline.
           </p>
+          <ul className="mt-3 space-y-2 max-w-2xl">
+            {[
+              'Portland Thorns lead the league in raw attendance.',
+              "Kansas City Current is sold out in its purpose-built stadium.",
+              "Washington Spirit posted the largest 2025 gain (+26.6%) after its move to Audi Field.",
+            ].map((point, i) => (
+              <li key={i} className="flex gap-2.5 text-sm text-[var(--color-ink)]/90 leading-snug">
+                <span className="shrink-0 text-[var(--color-accent)] font-semibold" aria-hidden="true">
+                  →
+                </span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Honeymoon effect: strongest, most surprising driver */}
         <div className="mb-14">
-          <FigureCard
+          <FigureSpread
             src={honeymoonEffect}
             alt="A new stadium buys a team several seasons of sharply elevated attendance"
             label="Figure 1"
-            caption="Five teams moved into a new venue since 2021. In response, every team saw a jump, from +62% (Kansas City) to +136% (Gotham FC). In the regression, a new-stadium flag is worth an estimated +38% in attendance."
+            claim="A new stadium is worth more than winning."
+            points={[
+              'Five teams moved into a new venue since 2021 — every one of them saw an attendance jump.',
+              'Gains ranged from +62% (Kansas City) to +136% (Gotham FC).',
+              'In the full regression, a new-stadium flag is worth an estimated +38% in attendance.',
+            ]}
           />
         </div>
 
         {/* Rivalry premium */}
         <div className="mb-14">
-          <FigureCard
+          <FigureSpread
             src={rivalryPremium}
             alt="Rivalry matchups carry a significant, positive attendance premium over a team's same-season baseline"
             label="Figure 2"
-            // claim="Rivalries sell tickets that standings don't."
-            caption="Games in the Cascadia Rivalry (Seattle vs. Portland) hosted in Seattle, a team with low attendance overall, draw an average of 4,097 more fans than the team's own season baselines, across 17 meetings. In the regression, a rivalry flag is worth an estimated +19% in attendance."
+            claim="Rivalries sell tickets that standings don't."
+            reverse
+            points={[
+              "Cascadia derby games hosted in Seattle draw +4,097 fans over the team's own season baseline.",
+              'That premium holds across all 17 meetings between Portland and Seattle.',
+              'In the full regression, a rivalry flag is worth an estimated +19% in attendance.',
+            ]}
           />
         </div>
 
@@ -83,47 +103,65 @@ export default function ResultsSection() {
           factors it can't.
         </PullQuote>
 
-        {/* Two-panel negative result: what doesn't predict attendance */}
+        {/* Negative result: what doesn't predict attendance. Two charts that got
+            unreadable side by side at half width — toggle between them instead. */}
         <div className="mb-14">
-          <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figure 4</p>
-          <p className="font-serif-heading text-lg font-semibold text-[var(--color-primary-deep)] mb-3">
-            Market size and on-field success don't meaningfully influence attendance.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <FigureCard
-              src={marketSize}
-              alt="Market size is only weakly correlated with average attendance across teams"
-              //benchmark="vs. MLS"
-              caption="Metro population barely correlates with attendance in either league (NWSL r=0.05, n=16; MLS r=-0.19, n=30). New York City teams across the NWSL and MLS draw few fans than teams in much smaller markets."
-            />
-            <FigureCard
-              src={olsRegression}
-              alt="On-field success explains markedly less variance in attendance than stadium and rivalry effects do"
-              caption="Points-per-game correlates weakly with same-season attendance in both leagues (NWSL r=0.23, n=95; MLS r=0.16, n=288). In the full regression, an extra point per game is worth an estimated +6.5% in attendance, a small but real effect."
-            />
-          </div>
+          <FigureToggle
+            label="Figure 4"
+            benchmark="vs. MLS"
+            claim="Market size and on-field success don't meaningfully influence attendance."
+            tabs={[
+              {
+                tabLabel: 'Market size',
+                src: marketSize,
+                alt: 'Market size is only weakly correlated with average attendance across teams',
+                points: [
+                  'Metro population barely correlates with attendance in either league (NWSL r=0.05, n=16; MLS r=-0.19, n=30).',
+                  'NYC teams in both leagues draw fewer fans than teams in much smaller markets.',
+                ],
+              },
+              {
+                tabLabel: 'On-field success',
+                src: olsRegression,
+                alt: 'On-field success explains markedly less variance in attendance than stadium and rivalry effects do',
+                points: [
+                  'Points-per-game correlates weakly with same-season attendance too (NWSL r=0.23, n=95; MLS r=0.16, n=288).',
+                  'An extra point per game is worth an estimated +6.5% in attendance — small, but real.',
+                ],
+              },
+            ]}
+          />
         </div>
 
         {/* Topic modeling: coverage volume + composition, plus the star-power finding */}
         <div className="mb-14">
-          <FigureCard
+          <FigureSpread
             src={topicMixByYear}
             alt="LDA topic modeling of NWSL headlines shows coverage volume rising since 2018, with a shift from 'how to watch' logistics toward coaching storylines and competitive coverage"
             label="Figure 5"
-            caption="LDA topic tagging on 8,328 headlines (2012-2024, 4 topics) shows coverage nearly tripling since 2018, with the mix shifting from 'how to watch' logistics toward coaching storylines and competitive coverage. Notably, the model — with no notion of 'players' — surfaced Megan Rapinoe and Alex Morgan's names among its own topic-defining vocabulary, a sign of how much individual star power still drives NWSL coverage."
+            claim="Coverage is growing up, not just growing."
+            points={[
+              'Coverage volume has nearly tripled since 2018, across 8,328 headlines (2012–2024, 4 LDA topics).',
+              "The mix has shifted from 'how to watch' logistics toward coaching storylines and competitive coverage.",
+              "Rapinoe and Morgan's names surfaced in the model's own topic vocabulary — star power still drives coverage.",
+            ]}
           />
         </div>
 
         {/* Closing beat: broadens from stadium attendance to league-wide culture */}
         <div className="mb-14">
-          <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figure 6</p>
-          <p className="font-serif-heading text-lg font-semibold text-[var(--color-primary-deep)] mb-3">
-            Demand is growing for women's soccer content, a sign of a broader cultural shift that will continue to lift attendance.
-          </p>
-          <FigureCard
+          <FigureSpread
             src={youtubeRise}
             alt="YouTube upload growth for women's soccer channels accelerates as independent channels launch and overtake the NWSL's own"
-            caption="Independent women's-soccer media now outdraws the league's own channel: Just Women's Sports has 300K YouTube subscribers to the NWSL's official 250K, with four more dedicated channels behind them, launched between 2019 and 2024. Independents' combined upload volume overtook the NWSL's own channel in 2021 and has kept pulling away since. Article coverage itself spikes around events the league doesn't control — the November 2024 peak (291 articles) was driven by USWNT-England buzz and expansion-city announcements, not a game result."
+            label="Figure 6"
+            claim="Demand for women's soccer content is bigger than the league's own channel."
+            reverse
+            points={[
+              "Just Women's Sports now has 300K YouTube subscribers to the NWSL's own 250K.",
+              "Four more independent, women's-sports-specific channels have launched since 2019.",
+              "Independents' combined upload volume overtook the NWSL's own channel in 2021 and has kept pulling away.",
+              "Coverage spikes track events the league doesn't control — the Nov. 2024 peak was USWNT-England buzz, not a game result.",
+            ]}
           />
         </div>
 
