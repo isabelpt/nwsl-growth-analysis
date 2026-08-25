@@ -162,27 +162,12 @@ export default function ResultsSection() {
             points={[
               "Just Women's Sports now has 300K YouTube subscribers to the NWSL's own 250K.",
               "Four more independent, women's-sports-specific channels have launched since 2019.",
+              "Retired players are building media careers, such as Christen Press and Tobin Heath with RE, and Sam Mewis with The Women's Game.",
               "Independents' combined upload volume overtook the NWSL's own channel in 2021 and has kept pulling away.",
-              "Coverage spikes track events the league doesn't control — the Nov. 2024 peak was USWNT-England buzz, not a game result.",
+              "Coverage spikes track events the league doesn't control, often relating to the USWNT.",
             ]}
           />
         </div>
-
-        {/* Supporting figures
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <FigureCard
-            src={awayDrawLift}
-            alt="Attendance lift when a popular away team visits"
-            label="Supporting"
-            caption="Bay FC draws the biggest road crowds relative to the host's own baseline (+1,096/game), followed by San Diego Wave (+789) and Washington Spirit (+713) — all recent, highly-anticipated expansion or relocation stories. Racing Louisville (-1,265) and Utah Royals (-971) draw the smallest road crowds."
-          />
-          <FigureCard
-            src={capacityUtilization}
-            alt="Capacity utilization by team"
-            label="Supporting"
-            caption="Kansas City Current sold out CPKC Stadium — the first venue purpose-built for a women's pro sports team — at 100% capacity in 2025. Seattle Reign, by contrast, fills just 19% of the 38,500-seat Lumen Field it shares as the secondary tenant. Purpose-built, right-sized venues consistently outperform oversized shared ones."
-          />
-        </div> */}
       </div>
     </section>
   )

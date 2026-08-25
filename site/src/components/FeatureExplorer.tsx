@@ -79,13 +79,13 @@ export default function FeatureExplorer({ label, tabs }: FeatureExplorerProps) {
         })}
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-center">
-        <figure className="bg-[var(--color-paper)] border border-[var(--color-line)] shadow-offset-sm">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center">
+        <figure className="w-full md:w-[58%] shrink-0 bg-[var(--color-paper)] border border-[var(--color-line)] shadow-offset-sm">
           <div className="bg-white">
             <img src={tab.src} alt={tab.alt} className="w-full h-auto block" />
           </div>
         </figure>
-        <div>
+        <div className="w-full md:w-[42%]">
           <p className="font-serif-heading text-xl font-semibold text-[var(--color-primary-deep)] leading-snug mb-3">
             {tab.claim}
           </p>
