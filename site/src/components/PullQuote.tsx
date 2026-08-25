@@ -1,9 +1,14 @@
+// A mid-section break -- marks a shift in subject (e.g. attendance findings
+// giving way to media-coverage findings) the way a chapter title would, not
+// a quoted aside. A top rule (the same divider every <section> already uses)
+// instead of a blockquote's left border, and set at title size/weight so it
+// reads as a heading you'd skim for, not a pull-quote you'd skip past.
 export default function PullQuote({ children }: { children: React.ReactNode }) {
   return (
-    <blockquote className="border-l-4 border-[var(--color-accent)] pl-6 py-2 my-14">
-      <p className="font-serif-heading text-2xl md:text-3xl font-semibold leading-snug text-[var(--color-primary-deep)]">
+    <div className="my-16 pt-10 border-t border-[var(--color-line)]">
+      <h3 className="font-serif-heading text-3xl md:text-4xl font-semibold leading-snug text-[var(--color-primary-deep)]">
         {children}
-      </p>
-    </blockquote>
+      </h3>
+    </div>
   )
 }
