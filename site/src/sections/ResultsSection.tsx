@@ -24,8 +24,8 @@ const FEATURE_TABS = [
     alt: "Rivalry matchups carry a significant, positive attendance premium over a team's same-season baseline",
     claim: "Rivalries sell tickets that standings don't.",
     points: [
-      "Cascadia derby games hosted in Seattle draw +4,097 fans over the team's own season baseline.",
-      'In the full OLS regression, a rivalry flag is the strongest tested feature, worth an estimated +33% in attendance (p=0.04).',
+      "Cascadia rivalry games hosted in Seattle draw +4,097 fans over the team's own season baseline.",
+      'In the full OLS regression, a rivalry flag is the strongest tested feature, leading to a +33% in attendance (p=0.04).',
     ],
   },
   {
@@ -50,8 +50,8 @@ const FEATURE_TABS = [
     claim: 'Distance from downtown matters — just not as much as the literature says.',
     points: [
       'A study cited in our paper found NWSL attendance falls ~6.6% per mile of distance from downtown.',
-      "In the full OLS regression, this project's own estimate is a real, statistically significant effect (p=0.005) — but a much smaller one, ~2% per mile.",
-      "It's the single most statistically robust coefficient in the model, even though its practical size is modest next to the stadium and rivalry effects.",
+      "In the full OLS regression, this project's own estimate is a real, but smaller statistically significant effect (~2% per mile, p=0.005).",
+      "It's the most statistically significant coefficient in the model, even though its affect on attendance is much smaller than the rest.",
     ],
   },
   {
@@ -76,7 +76,7 @@ const FEATURE_TABS = [
     claim: "Winning doesn't reliably fill the stands.",
     points: [
       'Points-per-game correlates weakly with same-season attendance too (NWSL r=0.23, n=95; MLS r=0.16, n=288).',
-      'In the full OLS regression, an extra point per game is worth an estimated +11% in attendance — but that estimate is not statistically distinguishable from zero (p=0.43).',
+      'In the full OLS regression, an extra point per game is worth an estimated +11% in attendance, but not statistically significant (p=0.43).',
     ],
   },
 ]
@@ -113,27 +113,29 @@ export default function ResultsSection() {
           </ul>
         </div>
 
+         {/* Synthesizing figure: every driver, ranked, in one image */}
+        <div className="mb-14">
+          <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figure 1</p>
+          <p className="font-serif-heading text-lg font-semibold text-[var(--color-primary-deep)] mb-3">
+            OLS-Regression features ranked by how much they move attendance.
+          </p>
+          <EffectSizeChart />
+        </div>
+  
+
         {/* Mega toggle: every driver tested, one at a time, each with its own
             figure + evidence — the single entry point into Figures 1-5's worth
             of material that used to be five separate charts. Sits directly
             above the ranked bar chart it previews. */}
         <div className="mb-8">
+           <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figure 2</p>
+          <p className="font-serif-heading text-lg font-semibold text-[var(--color-primary-deep)] mb-3">
+            A deeper look at the model's features.
+          </p>
           <FeatureExplorer label="Figure 1" tabs={FEATURE_TABS} />
         </div>
 
-        {/* Synthesizing figure: every driver, ranked, in one image */}
-        <div className="mb-14">
-          <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figure 2</p>
-          <p className="font-serif-heading text-lg font-semibold text-[var(--color-primary-deep)] mb-3">
-            OLS-Regression features ranked by how much they actually move attendance.
-          </p>
-          <EffectSizeChart />
-        </div>
-
-        <PullQuote>
-          The factors investment can build outweigh the
-          factors it can't.
-        </PullQuote>
+       
 
         <PullQuote>Media coverage</PullQuote>
         {/* Topic modeling: coverage volume + composition, plus the star-power finding */}
@@ -146,7 +148,7 @@ export default function ResultsSection() {
             points={[
               'Coverage volume has nearly tripled since 2018, across 8,328 headlines (2012–2024, 4 LDA topics).',
               "The mix has shifted from 'how to watch' logistics toward coaching storylines and competitive coverage.",
-              "Rapinoe and Morgan's names surfaced in the model's own topic vocabulary — star power still drives coverage.",
+              "Rapinoe and Morgan's names surfaced in the topic model equations, evidence that star power drives coverage.",
             ]}
           />
         </div>
