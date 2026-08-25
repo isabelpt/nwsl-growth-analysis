@@ -4,7 +4,7 @@ export default function TakeawaySection() {
   return (
     <section id="takeaway" className="border-t border-[var(--color-line)] py-16">
       <div className="max-w-5xl mx-auto px-6">
-        <SectionHeading index="05" title="The Takeaway" eyebrow="So what" />
+        <SectionHeading index="06" title="The Takeaway" eyebrow="So what" />
 
         <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-stretch">
           <div className="border border-[var(--color-primary-deep)] bg-[var(--color-primary-deep)] text-white p-8 shadow-offset flex flex-col justify-center">

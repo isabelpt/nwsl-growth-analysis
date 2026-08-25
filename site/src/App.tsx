@@ -4,7 +4,8 @@ import Hero from './sections/Hero'
 import QuestionSection from './sections/QuestionSection'
 import DataSection from './sections/DataSection'
 import MethodSection from './sections/MethodSection'
-import ResultsSection from './sections/ResultsSection'
+import AttendanceSection from './sections/AttendanceSection'
+import MediaSection from './sections/MediaSection'
 import TakeawaySection from './sections/TakeawaySection'
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
         <QuestionSection />
         <DataSection />
         <MethodSection />
-        <ResultsSection />
+        <AttendanceSection />
+        <MediaSection />
         <TakeawaySection />
       </main>
       <Footer />

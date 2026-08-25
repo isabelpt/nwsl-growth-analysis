@@ -1,16 +1,12 @@
 import SectionHeading from '../components/SectionHeading'
-import FigureSpread from '../components/FigureSpread'
 import FeatureExplorer from '../components/FeatureExplorer'
 import SummaryTable from '../components/SummaryTable'
 import EffectSizeChart from '../components/EffectSizeChart'
-import PullQuote from '../components/PullQuote'
 import honeymoonEffect from '../assets/figures/honeymoon-effect.png'
 import rivalryPremium from '../assets/figures/rivalry-premium.png'
 import marketSize from '../assets/figures/market-size.png'
 import olsRegression from '../assets/figures/ols-regression.png'
 import distMilesVsAttendance from '../assets/figures/dist-miles-vs-attendance.png'
-import youtubeRise from '../assets/figures/youtube-rise.png'
-import topicMixByYear from '../assets/figures/topic-mix-by-year.png'
 
 // Same order as EffectSizeChart (ranked by |coefficient|, largest first) so
 // the mega toggle right above the bar chart previews the exact order the
@@ -81,11 +77,19 @@ const FEATURE_TABS = [
   },
 ]
 
-export default function ResultsSection() {
+// The attendance/regression half of the findings -- everything the OLS model
+// says about what moves ticket sales. Media/coverage growth is its own
+// section (MediaSection) since it's a genuinely different dataset and story,
+// not just a continuation of this one.
+export default function AttendanceSection() {
   return (
     <section id="results" className="border-t border-[var(--color-line)] py-16">
       <div className="max-w-5xl mx-auto px-6">
-        <SectionHeading index="04" title="The Results" eyebrow="Findings" />
+        <SectionHeading
+          index="04"
+          title="Attendance is growing for the teams willing to invest"
+          eyebrow="Findings — Attendance"
+        />
 
         {/* Summary table — at-a-glance overview before the argument unfolds */}
         <div className="mb-14">
@@ -130,46 +134,12 @@ export default function ResultsSection() {
             figure + evidence — the single entry point into Figures 1-5's worth
             of material that used to be five separate charts. Sits directly
             above the ranked bar chart it previews. */}
-        <div className="mb-8">
+        <div>
           <p className="font-mono-label text-[11px] text-[var(--color-accent)] mb-2">Figure 2</p>
           <p className="font-serif-heading text-xl font-semibold text-[var(--color-primary-deep)] leading-snug mb-3">
             A deeper look at the model's features.
           </p>
           <FeatureExplorer tabs={FEATURE_TABS} />
-        </div>
-
-        <PullQuote>Media coverage</PullQuote>
-        {/* Topic modeling: coverage volume + composition, plus the star-power finding */}
-        <div className="mb-14">
-          <FigureSpread
-            src={topicMixByYear}
-            alt="LDA topic modeling of NWSL headlines shows coverage volume rising since 2018, with a shift from 'how to watch' logistics toward coaching storylines and competitive coverage"
-            label="Figure 3"
-            claim="Coverage is growing up, not just growing."
-            points={[
-              'Coverage volume has nearly tripled since 2018, across 8,328 headlines (2012–2024, 4 LDA topics).',
-              "The mix has shifted from 'how to watch' logistics toward coaching storylines and competitive coverage.",
-              "Rapinoe and Morgan's names surfaced in the topic model equations, evidence that star power drives coverage.",
-            ]}
-          />
-        </div>
-
-        {/* Closing beat: broadens from stadium attendance to league-wide culture */}
-        <div className="mb-14">
-          <FigureSpread
-            src={youtubeRise}
-            alt="YouTube upload growth for women's soccer channels accelerates as independent channels launch and overtake the NWSL's own"
-            label="Figure 4"
-            claim="Demand for women's soccer content is bigger than the league's own channel."
-            reverse
-            points={[
-              "Just Women's Sports now has 300K YouTube subscribers to the NWSL's own 250K.",
-              "Four more independent, women's-sports-specific channels have launched since 2019.",
-              "Retired players are building media careers, such as Christen Press and Tobin Heath with RE, and Sam Mewis with The Women's Game.",
-              "Independents' combined upload volume overtook the NWSL's own channel in 2021 and has kept pulling away.",
-              "Coverage spikes track events the league doesn't control, often relating to the USWNT.",
-            ]}
-          />
         </div>
       </div>
     </section>

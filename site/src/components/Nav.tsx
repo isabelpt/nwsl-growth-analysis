@@ -4,7 +4,8 @@ const LINKS = [
   { href: '#question', label: 'Question' },
   { href: '#data', label: 'Data' },
   { href: '#method', label: 'Method' },
-  { href: '#results', label: 'Results' },
+  { href: '#results', label: 'Attendance' },
+  { href: '#media', label: 'Media' },
   { href: '#takeaway', label: 'Takeaway' },
 ]
 
