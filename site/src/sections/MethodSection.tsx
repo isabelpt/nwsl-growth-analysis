@@ -14,7 +14,7 @@ const STEPS = [
   {
     step: '03',
     title: 'OLS regression',
-    text: "Log(attendance) regressed on team success, market size, rivalry, stadium age, and distance from downtown — fit with statsmodels on the full sample (not train/test-split) so each coefficient's significance can be read directly.",
+    text: "Log(attendance) regressed on team success, market size, rivalry, stadium age, and distance from downtown. Fit with statsmodels on the full sample (no train/test-split) to get each coefficient's significance.",
   },
   {
     step: '04',
