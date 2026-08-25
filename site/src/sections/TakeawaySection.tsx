@@ -10,10 +10,9 @@ export default function TakeawaySection() {
           <div className="border border-[var(--color-primary-deep)] bg-[var(--color-primary-deep)] text-white p-8 shadow-offset flex flex-col justify-center">
             <p className="font-mono-label text-[11px] text-[var(--color-accent)] mb-3">The claim</p>
             <p className="font-serif-heading text-2xl md:text-3xl font-semibold leading-snug">
-              NWSL growth is durable because it's built on structural
-              investment in stadiums and rivalries, not market luck or individual team success.
-              The growth of women's sport specific media suggests a larger cultural shift,
-              and a real signal that investments in women's sport are paying off.
+              NWSL growth is built on investments in stadiums and rivalries, not market luck or individual team success.
+              These results suggest durable league growth and the development of a women's specific sports culture, 
+              signalling that investments in women's sports are paying off.
             </p>
           </div>
 
