@@ -68,7 +68,7 @@ export default function ResultsSection() {
             points={[
               'Five teams moved into a new venue since 2021 — every one of them saw an attendance jump.',
               'Gains ranged from +62% (Kansas City) to +136% (Gotham FC).',
-              'In the full regression, a new-stadium flag is worth an estimated +38% in attendance.',
+              'In the full OLS regression, a new-stadium flag is worth an estimated +28% in attendance (p=0.08 — marginal, not quite p<.05).',
             ]}
           />
         </div>
@@ -84,7 +84,7 @@ export default function ResultsSection() {
             points={[
               "Cascadia derby games hosted in Seattle draw +4,097 fans over the team's own season baseline.",
               'That premium holds across all 17 meetings between Portland and Seattle.',
-              'In the full regression, a rivalry flag is worth an estimated +19% in attendance.',
+              'In the full OLS regression, a rivalry flag is worth an estimated +33% in attendance (p=0.04) — the single most statistically robust driver tested.',
             ]}
           />
         </div>
@@ -96,6 +96,14 @@ export default function ResultsSection() {
             Every driver we tested, ranked by how much it actually moves attendance.
           </p>
           <EffectSizeChart />
+          <div className="mt-4 border-l-2 border-[var(--color-accent)] pl-4 max-w-2xl">
+            <p className="text-sm text-[var(--color-ink)]/80 leading-relaxed">
+              <span className="font-medium text-[var(--color-primary-deep)]">One literature check: </span>
+              a study cited in the lit review found NWSL attendance falls ~6.6% per mile of distance from downtown.
+              The full regression finds a real, statistically significant effect (p=0.005) — but a much smaller one,
+              ~2% per mile, about a third the size the cited figure implies.
+            </p>
+          </div>
         </div>
 
         <PullQuote>
@@ -118,6 +126,7 @@ export default function ResultsSection() {
                 points: [
                   'Metro population barely correlates with attendance in either league (NWSL r=0.05, n=16; MLS r=-0.19, n=30).',
                   'NYC teams in both leagues draw fewer fans than teams in much smaller markets.',
+                  "In the full OLS regression, market size isn't statistically distinguishable from zero either (p=0.16).",
                 ],
               },
               {
@@ -126,7 +135,7 @@ export default function ResultsSection() {
                 alt: 'On-field success explains markedly less variance in attendance than stadium and rivalry effects do',
                 points: [
                   'Points-per-game correlates weakly with same-season attendance too (NWSL r=0.23, n=95; MLS r=0.16, n=288).',
-                  'An extra point per game is worth an estimated +6.5% in attendance — small, but real.',
+                  'In the full OLS regression, an extra point per game is worth an estimated +11% in attendance — but that estimate is not statistically distinguishable from zero (p=0.43).',
                 ],
               },
             ]}

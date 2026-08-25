@@ -19,11 +19,11 @@ export default function QuestionSection() {
             <p>
               Our results point to a durable growth story. The infrastructural and cultural factors a front office can build through sustained investment, 
               like a stadium move or a well-established rivalry have a much larger impact on attendance than factors that are out of a front office's control, like market size or on-field success.
-              A stadium move is worth roughly 38% more attendance on
+              A stadium move is worth roughly 28% more attendance on
               average, and a Cascadia Rivalry game between Portland and Seattle
               draws over 4,000 more fans than either team's own season
               baseline. Meanwhile, market size and on-field success barely
-              move the needle. The same pattern holds in MLS too, suggesting a soccer-wide story. 
+              move the needle. The same pattern holds in MLS too, suggesting a soccer-wide story.
             </p>
           </div>
           <div className="border border-[var(--color-line)] bg-[var(--color-paper-alt)] p-5 shadow-offset-accent">

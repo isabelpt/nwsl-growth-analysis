@@ -21,7 +21,7 @@ export default function TakeawaySection() {
           <p className="leading-relaxed text-[var(--color-ink)]/85">
             the same results hint at a stratifying league. Kansas City is reliably selling
             out a purpose-built stadium, while Seattle fills a fifth of a shared,
-            oversized one. If a new venue is worth 38% in attendance, the 
+            oversized one. If a new venue is worth an estimated 28% in attendance, the
             financial capacity to build one increasingly separates the top and bottom of the
             table.
           </p>

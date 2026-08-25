@@ -13,8 +13,8 @@ const STEPS = [
   },
   {
     step: '03',
-    title: 'Linear & logistic regression',
-    text: 'Log(attendance) regressed on team success, market size, rivalry, stadium age, and distance from downtown.',
+    title: 'OLS regression',
+    text: "Log(attendance) regressed on team success, market size, rivalry, stadium age, and distance from downtown — fit with statsmodels on the full sample (not train/test-split) so each coefficient's significance can be read directly.",
   },
   {
     step: '04',
