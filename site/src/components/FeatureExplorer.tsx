@@ -11,7 +11,6 @@ export type FeatureTab = {
 }
 
 type FeatureExplorerProps = {
-  label?: string
   tabs: FeatureTab[]
 }
 
@@ -22,22 +21,21 @@ type FeatureExplorerProps = {
 // FigureToggle (which only ever toggled two related charts): a pulsing
 // "click a driver" cue and big chunky tab buttons that carry their own
 // effect size + significance badge so the choice itself previews the payoff.
-export default function FeatureExplorer({ label, tabs }: FeatureExplorerProps) {
+// No "Figure N" label of its own -- the caller renders that above, same as
+// every other figure on the page, so there's exactly one label per figure.
+export default function FeatureExplorer({ tabs }: FeatureExplorerProps) {
   const [active, setActive] = useState(0)
   const tab = tabs[active]
 
   return (
     <div>
-      <div className="flex items-center justify-between gap-3 flex-wrap mb-4">
-        {label && <p className="font-mono-label text-[11px] text-[var(--color-accent)]">{label}</p>}
-        <p className="font-mono-label text-[11px] text-[var(--color-primary)] flex items-center gap-2">
-          <span
-            aria-hidden="true"
-            className="inline-flex h-2 w-2 rounded-full bg-[var(--color-accent)] animate-pulse"
-          />
-          Click a driver to see its evidence
-        </p>
-      </div>
+      <p className="font-mono-label text-[11px] text-[var(--color-primary)] flex items-center gap-2 mb-4">
+        <span
+          aria-hidden="true"
+          className="inline-flex h-2 w-2 rounded-full bg-[var(--color-accent)] animate-pulse"
+        />
+        Click a driver to see its evidence
+      </p>
 
       {/* Prominent, full-width tab bar -- each button previews its own
           finding so the payoff of clicking is visible before you click. */}

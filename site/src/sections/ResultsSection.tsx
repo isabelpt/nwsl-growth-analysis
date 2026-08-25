@@ -113,29 +113,30 @@ export default function ResultsSection() {
           </ul>
         </div>
 
-         {/* Synthesizing figure: every driver, ranked, in one image */}
+        {/* Synthesizing figure: every driver, ranked, in one image. Label +
+            description follow the same purple-label / serif-description
+            pattern as every FigureSpread below, so every figure on the page
+            reads consistently regardless of whether it's wrapped in a
+            component or laid out inline here. */}
         <div className="mb-14">
-          <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figure 1</p>
-          <p className="font-serif-heading text-lg font-semibold text-[var(--color-primary-deep)] mb-3">
+          <p className="font-mono-label text-[11px] text-[var(--color-accent)] mb-2">Figure 1</p>
+          <p className="font-serif-heading text-xl font-semibold text-[var(--color-primary-deep)] leading-snug mb-3">
             OLS-Regression features ranked by how much they move attendance.
           </p>
           <EffectSizeChart />
         </div>
-  
 
         {/* Mega toggle: every driver tested, one at a time, each with its own
             figure + evidence — the single entry point into Figures 1-5's worth
             of material that used to be five separate charts. Sits directly
             above the ranked bar chart it previews. */}
         <div className="mb-8">
-           <p className="font-mono-label text-xs text-[var(--color-primary)] mb-1">Figure 2</p>
-          <p className="font-serif-heading text-lg font-semibold text-[var(--color-primary-deep)] mb-3">
+          <p className="font-mono-label text-[11px] text-[var(--color-accent)] mb-2">Figure 2</p>
+          <p className="font-serif-heading text-xl font-semibold text-[var(--color-primary-deep)] leading-snug mb-3">
             A deeper look at the model's features.
           </p>
-          <FeatureExplorer label="Figure 1" tabs={FEATURE_TABS} />
+          <FeatureExplorer tabs={FEATURE_TABS} />
         </div>
-
-       
 
         <PullQuote>Media coverage</PullQuote>
         {/* Topic modeling: coverage volume + composition, plus the star-power finding */}
