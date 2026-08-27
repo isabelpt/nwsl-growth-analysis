@@ -126,10 +126,9 @@ It listed six specific stale locations (abstract, Table 1, two methods/results s
 
 ## Where the model failed
 
-1. **Inherited a stale exclusion without questioning it.** The 2021 COVID-suppression gap existed in the original notebook's logic for months before anyone (model or me) checked whether it should apply everywhere it was used.
+1. **COVID 2021 exclusion.** I had to remind the model 10+ times that 2021 had to be excluded from the model, not just 2020. It couldn't seem to understand that the pandemic's effects spanned more than one season.
 2. **Computed real numbers outside the reproducible pipeline, twice**, and presented them as finished without flagging that they weren't sourced from the notebooks until I asked directly.
-3. **Fabricated-by-omission annotation dates.** Two chart callouts stated launch years that were simply wrong, and the first "fix" attempt didn't catch them either — it fixed the *rendering* bug, not the *facts*.
-4. **A correction didn't fully propagate** through a document with the same number stated in five places, twice (once when I edited independently, and implicitly, since the model itself needed a dedicated re-verification pass to catch that its own earlier fix hadn't reached every instance).
+3. **Fabricated-by-omission annotation dates.** Two chart callouts stated launch years that were simply wrong, and it struggled to fix it at first.
 
 ## What I'd do differently
 
