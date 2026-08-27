@@ -28,20 +28,7 @@ export default function Hero() {
               men’s leagues (market size, on-field success) or does it reflect something more
               durable and specific to women’s sports? We model the the influences on attendance in the NWSL compared to the MLS to find the answer.
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href="#results"
-                className="font-mono-label text-xs bg-[var(--color-primary)] text-white border border-[var(--color-primary-deep)] px-5 py-3 shadow-offset-sm transition-all duration-150 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-offset"
-              >
-                See the results
-              </a>
-              <a
-                href="#question"
-                className="font-mono-label text-xs border border-[var(--color-primary)] text-[var(--color-primary)] px-5 py-3 transition-colors duration-150 hover:bg-[var(--color-primary)] hover:text-white"
-              >
-                Read the story
-              </a>
-            </div>
+
           </div>
 
           <div className="flex flex-col gap-4">
