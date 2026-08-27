@@ -10,8 +10,8 @@ export default function TakeawaySection() {
           <div className="border border-[var(--color-primary-deep)] bg-[var(--color-primary-deep)] text-white p-8 shadow-offset flex flex-col justify-center">
             <p className="font-mono-label text-[11px] text-[var(--color-accent)] mb-3">The claim</p>
             <p className="font-serif-heading text-2xl md:text-3xl font-semibold leading-snug">
-              NWSL growth is built on investments in stadiums and rivalries, not market luck or individual team success.
-              These results suggest durable league growth and the development of a women's specific sports culture, 
+              NWSL growth is built on rivalries and stadium investment, not market luck or individual team success.
+              These results suggest durable league growth and the development of a women's specific sports culture,
               signalling that investments in women's sports are paying off.
             </p>
           </div>
@@ -23,7 +23,7 @@ export default function TakeawaySection() {
                 {[
                   'The league as a whole is growing, but it is also stratifying.',
                   "Kansas City reliably sells out its purpose-built stadium; Seattle fills a fifth of a shared, oversized one.",
-                  'A new venue is worth an estimated +28% in attendance, so the financial capacity to build one increasingly separates the top and bottom of the table.',
+                  'A new venue brings a large attendance jump for the team that builds one (+31% to +166% in our data), so the financial capacity to build one increasingly separates the top and bottom of the table.',
                 ].map((point, i) => (
                   <li key={i} className="flex gap-2.5 text-[15px] text-[var(--color-ink)]/90 leading-snug">
                     <span className="shrink-0 text-[var(--color-accent)] font-semibold" aria-hidden="true">

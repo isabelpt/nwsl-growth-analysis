@@ -54,7 +54,7 @@ export default function EffectSizeChart() {
         })}
       </div>
       <p className="font-mono-label text-[10px] text-[var(--color-ink)]/50 mt-5">
-        OLS coefficients on log(attendance), full sample (n=94), ranked largest to smallest. Faded/hatched bars are not
+        OLS coefficients on log(attendance), full sample (n=1,005), ranked largest to smallest. Faded/hatched bars are not
         statistically distinguishable from zero.
       </p>
     </div>

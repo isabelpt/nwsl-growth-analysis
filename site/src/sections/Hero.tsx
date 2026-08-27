@@ -49,7 +49,7 @@ export default function Hero() {
               <StatTile value="10,243" label="Avg. attendance, 2025" />
               <StatTile value="+1,096" label="Away-draw lift, Bay FC" />
               <StatTile value="100%" label="Capacity, KC Current" />
-              <StatTile value="+4,097" label="Rivalry premium, Cascadia" />
+              <StatTile value="+3,356" label="Rivalry premium, Cascadia" />
             </div>
             <div className="border border-[var(--color-line)] bg-[var(--color-paper-alt)] p-5 shadow-offset-accent">
               <p className="font-mono-label text-[11px] text-[var(--color-primary)] mb-3">

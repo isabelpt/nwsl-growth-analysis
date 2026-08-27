@@ -17,12 +17,12 @@ export default function QuestionSection() {
               attendance. We then compare these results to a secondary analysis of the growth of the League’s media footprint.
             </p>
             <p>
-              Our results point to a durable growth story. The infrastructural and cultural factors a front office can build through sustained investment, 
-              like a stadium move or a well-established rivalry have a much larger impact on attendance than factors that are out of a front office's control, like market size or on-field success.
-              A stadium move is worth roughly 28% more attendance on
-              average, and a Cascadia Rivalry game between Portland and Seattle
-              draws over 4,000 more fans than either team's own season
-              baseline. Meanwhile, market size and on-field success barely
+              Our results point to a durable growth story. A well-established rivalry has a much larger, more
+              statistically reliable impact on attendance than factors that are out of a front office's control,
+              like market size or on-field success. A Cascadia Rivalry game between Portland and Seattle
+              draws over 3,300 more fans than either team's own season
+              baseline. A new stadium comes with a large attendance jump too, though that effect is less certain
+              once other factors are held constant. Meanwhile, market size and on-field success barely
               move the needle. The same pattern holds in MLS too, suggesting a soccer-wide story.
             </p>
           </div>
