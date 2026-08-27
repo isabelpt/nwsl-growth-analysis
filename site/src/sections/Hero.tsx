@@ -23,7 +23,7 @@ export default function Hero() {
               By Isabel Prado-Tucker
             </p>
             <p className="mt-5 text-base text-[var(--color-ink)]/80 leading-relaxed max-w-md">
-              I find out what's driving the league's grown, and how it compares to the MLS and established theories about men's leagues.
+              I find out what's driving the league's growth, and how it compares to the MLS and established theories about men's leagues.
             </p>
 
           </div>
