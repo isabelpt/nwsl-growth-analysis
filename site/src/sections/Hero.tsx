@@ -23,10 +23,7 @@ export default function Hero() {
               By Isabel Prado-Tucker
             </p>
             <p className="mt-5 text-base text-[var(--color-ink)]/80 leading-relaxed max-w-md">
-              Is NWSL attendance growth
-              explained by the same structural factors that drive attendance in established
-              men’s leagues (market size, on-field success) or does it reflect something more
-              durable and specific to women’s sports? We model the the influences on attendance in the NWSL compared to the MLS to find the answer.
+              I find out what's driving the league's grown, and how it compares to the MLS and established theories about men's leagues.
             </p>
 
           </div>
