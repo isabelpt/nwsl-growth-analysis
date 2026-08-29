@@ -84,7 +84,13 @@ export default function SummaryTable() {
 
   return (
     <div className="border border-[var(--color-line)] bg-[var(--color-paper)] shadow-offset-sm">
-      <table className="w-full text-sm border-collapse table-fixed">
+      {/* Horizontal scroll below ~640px: at 8 columns, the fixed % widths
+       *  this table relies on to avoid scrolling on desktop get squeezed
+       *  so narrow on a phone that headers wrap and overlap their
+       *  neighbors instead of shrinking cleanly -- same failure mode (and
+       *  same fix) as the charts' own ChartScrollFrame. */}
+      <div className="overflow-x-auto">
+      <table className="w-full text-sm border-collapse table-fixed" style={{ minWidth: 640 }}>
         <colgroup>
           {columns.map((col) => (
             <col key={col.key} style={{ width: `${col.width}%` }} />
@@ -140,6 +146,7 @@ export default function SummaryTable() {
           ))}
         </tbody>
       </table>
+      </div>
       <p className="px-4 py-2 text-xs text-[var(--color-primary)]/70 border-t border-[var(--color-line)]">
         Click a column header to sort. ★ small sample: either a 2026 expansion team in its
         first, partial season, or a team with ≤ 3 completed seasons, so YoY / share-of-league /
