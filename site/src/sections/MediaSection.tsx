@@ -24,6 +24,7 @@ export default function MediaSection() {
             chart={<TopicMixChart />}
             label="Figure 3"
             claim="Coverage is growing up, not just growing."
+            source="MediaCloud API, 8,328 NWSL-related headlines (2012–2024), 4 LDA topics"
             points={[
               'Coverage volume has nearly tripled since 2018, across 8,328 headlines (2012–2024, 4 LDA topics).',
               "The mix has shifted from 'how to watch' logistics toward coaching storylines and competitive coverage.",
@@ -38,6 +39,7 @@ export default function MediaSection() {
             chart={<YoutubeRiseChart />}
             label="Figure 4"
             claim="Demand for women's soccer content is bigger than the league's own channel."
+            source="YouTube Data API v3, NWSL's official channel + 5 independent women's-soccer channels"
             reverse
             points={[
               "Just Women's Sports now has 300K YouTube subscribers to the NWSL's own 250K.",

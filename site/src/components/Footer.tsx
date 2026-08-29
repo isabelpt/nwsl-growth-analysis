@@ -20,6 +20,14 @@ export default function Footer() {
           >
             Full write-up (PDF)
           </a>
+          <a
+            href="https://gotham-at-etihad.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm underline decoration-2 decoration-[var(--color-accent)] underline-offset-4"
+          >
+            NWSL market study v2
+          </a>
         </div>
       </div>
     </footer>
