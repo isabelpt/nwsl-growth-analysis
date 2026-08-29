@@ -38,7 +38,25 @@ export default function RivalryPremiumChart() {
         <p className="font-mono-label text-[10px] text-[var(--color-ink)]/50">n = {rows.length}, &ge;8 meetings</p>
       </div>
 
-      <ChartScrollFrame minWidth={480}>
+      <ChartScrollFrame
+        minWidth={480}
+        overlay={
+          hover !== null && (
+            <ChartTooltip
+              xPct={(CENTER_X / W) * 100}
+              yPct={((TOP_PAD + hover * ROW_H) / H) * 100}
+              visible
+            >
+              <p className="font-mono-label text-[10px] text-[var(--color-accent)] mb-1">{rows[hover].matchup}</p>
+              <p>
+                <span className="font-semibold">{rows[hover].lift >= 0 ? '+' : ''}{rows[hover].lift.toLocaleString()}</span> fans
+                vs. {rows[hover].home}'s own season average
+              </p>
+              <p className="text-[var(--color-ink)]/60 mt-1">{rows[hover].meetings} meetings, 2016-2025</p>
+            </ChartTooltip>
+          )
+        }
+      >
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto block overflow-visible" role="img"
           aria-label="Rivalry premium by matchup">
           {/* zero line */}
@@ -108,21 +126,6 @@ export default function RivalryPremiumChart() {
             )
           })}
         </svg>
-
-        {hover !== null && (
-          <ChartTooltip
-            xPct={(CENTER_X / W) * 100}
-            yPct={((TOP_PAD + hover * ROW_H) / H) * 100}
-            visible
-          >
-            <p className="font-mono-label text-[10px] text-[var(--color-accent)] mb-1">{rows[hover].matchup}</p>
-            <p>
-              <span className="font-semibold">{rows[hover].lift >= 0 ? '+' : ''}{rows[hover].lift.toLocaleString()}</span> fans
-              vs. {rows[hover].home}'s own season average
-            </p>
-            <p className="text-[var(--color-ink)]/60 mt-1">{rows[hover].meetings} meetings, 2016-2025</p>
-          </ChartTooltip>
-        )}
       </ChartScrollFrame>
     </div>
   )

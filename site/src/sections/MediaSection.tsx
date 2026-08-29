@@ -15,7 +15,7 @@ export default function MediaSection() {
         <SectionHeading
           index="05"
           title="The league is growing outside of the stadium, too, and a distinct women's sports culture is emerging"
-          eyebrow="Findings — Media & Culture"
+          eyebrow="Findings: Media & Culture"
         />
 
         {/* Topic modeling: coverage volume + composition, plus the star-power finding */}

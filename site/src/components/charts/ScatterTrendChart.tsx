@@ -86,7 +86,23 @@ export default function ScatterTrendChart({
         </p>
       </div>
 
-      <ChartScrollFrame minWidth={480}>
+      <ChartScrollFrame
+        minWidth={480}
+        overlay={
+          hover !== null && (
+            <ChartTooltip xPct={(px(points[hover].x) / W) * 100} yPct={(py(points[hover].y) / H) * 100} visible>
+              <p className="font-mono-label text-[10px] text-[var(--color-accent)] mb-0.5">{points[hover].label}</p>
+              {points[hover].sub && <p className="text-[var(--color-ink)]/60">{points[hover].sub}</p>}
+              <p>
+                {xAxisLabel}: {xTooltipFormat(points[hover].x)}
+              </p>
+              <p>
+                {yAxisLabel}: {yFormat(points[hover].y)}
+              </p>
+            </ChartTooltip>
+          )
+        }
+      >
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto block overflow-visible" role="img" aria-label={`${yAxisLabel} vs ${xAxisLabel} scatter plot`}>
           {/* gridlines */}
           {resolvedYTicks.map((t) => (
@@ -135,19 +151,6 @@ export default function ScatterTrendChart({
             )
           })}
         </svg>
-
-        {hover !== null && (
-          <ChartTooltip xPct={(px(points[hover].x) / W) * 100} yPct={(py(points[hover].y) / H) * 100} visible>
-            <p className="font-mono-label text-[10px] text-[var(--color-accent)] mb-0.5">{points[hover].label}</p>
-            {points[hover].sub && <p className="text-[var(--color-ink)]/60">{points[hover].sub}</p>}
-            <p>
-              {xAxisLabel}: {xTooltipFormat(points[hover].x)}
-            </p>
-            <p>
-              {yAxisLabel}: {yFormat(points[hover].y)}
-            </p>
-          </ChartTooltip>
-        )}
       </ChartScrollFrame>
     </div>
   )

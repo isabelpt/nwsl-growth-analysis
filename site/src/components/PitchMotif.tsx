@@ -12,12 +12,17 @@
 // circle uses aspect-ratio:1 so it can't be squashed into an ellipse
 // either. Rendered faint, and the hero content sits on an opaque panel on
 // top of it, so it never competes with the text.
+// Lines and grass fill carry their own alpha (rather than one opacity on
+// the whole container) so the navy lines stay legibly navy -- diluting
+// everything by one shared opacity is what made them read as grey.
 export default function PitchMotif({ className = '' }: { className?: string }) {
-  const line = 'var(--color-accent)'
+  const line = 'rgba(20, 38, 63, 0.85)' // --color-primary-deep, kept solid so it doesn't wash out to grey
+  const grass = 'rgba(46, 125, 50, 0.38)' // pitch green -- a true turf green, not a pale sage tint
   return (
-    <div className={className} aria-hidden="true" style={{ opacity: 0.3 }}>
-      {/* outer touchlines */}
-      <div style={{ position: 'absolute', inset: '3% 2%', border: `3px solid ${line}` }} />
+    <div className={className} aria-hidden="true">
+      {/* outer touchlines -- filled, so only the playing surface (not the
+          rest of the hero) reads as green */}
+      <div style={{ position: 'absolute', inset: '3% 2%', border: `3px solid ${line}`, backgroundColor: grass }} />
       {/* halfway line */}
       <div
         style={{

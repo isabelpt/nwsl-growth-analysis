@@ -40,7 +40,7 @@ const th = 'font-mono-label text-[10px] lg:text-[11px] font-medium text-[var(--c
 const td = 'px-2 lg:px-3 py-3 text-right font-mono text-[13px] lg:text-sm whitespace-nowrap overflow-hidden text-ellipsis'
 
 function fmtPct(v: number | null, digits = 1) {
-  if (v === null) return '—'
+  if (v === null) return '-'
   return `${v >= 0 ? '+' : ''}${v.toFixed(digits)}%`
 }
 
@@ -127,9 +127,9 @@ export default function SummaryTable() {
               <td className={td} style={{ color: pctColor(row.yoyPct) }}>
                 {fmtPct(row.yoyPct)}
               </td>
-              <td className={td}>{row.shareOfLeaguePct === null ? '—' : `${row.shareOfLeaguePct.toFixed(1)}%`}</td>
+              <td className={td}>{row.shareOfLeaguePct === null ? '-' : `${row.shareOfLeaguePct.toFixed(1)}%`}</td>
               <td className={td}>
-                {row.capacityUtilizationPct === null ? '—' : `${row.capacityUtilizationPct.toFixed(0)}%`}
+                {row.capacityUtilizationPct === null ? '-' : `${row.capacityUtilizationPct.toFixed(0)}%`}
               </td>
               <td className={td} style={{ color: pctColor(row.awayDrawLift) }}>
                 {row.awayDrawLift >= 0 ? '+' : ''}
@@ -141,8 +141,8 @@ export default function SummaryTable() {
         </tbody>
       </table>
       <p className="px-4 py-2 text-xs text-[var(--color-primary)]/70 border-t border-[var(--color-line)]">
-        Click a column header to sort. ★ small sample — either a 2026 expansion team in its
-        first, partial season, or a team with ≤ 3 completed seasons — so YoY / share-of-league /
+        Click a column header to sort. ★ small sample: either a 2026 expansion team in its
+        first, partial season, or a team with ≤ 3 completed seasons, so YoY / share-of-league /
         capacity utilization (which need a completed prior season) may be blank or noisy.
       </p>
     </div>

@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="bg-[var(--color-paper)]/70 backdrop-blur-[1px] border border-[var(--color-line)] shadow-offset p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="flex flex-col justify-center">
             <p className="font-mono-label text-xs text-[var(--color-accent)] mb-4">
-              Research project · attendance economics
+              NWSL Market Study v1
             </p>
             <h1 className="font-serif-heading text-4xl md:text-5xl font-semibold leading-tight text-[var(--color-primary-deep)]">
               What Drives NWSL Attendance? Evidence of a Durable, Women’s Specific Sports Culture

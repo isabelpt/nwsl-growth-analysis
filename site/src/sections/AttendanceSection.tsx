@@ -83,13 +83,13 @@ export default function AttendanceSection() {
         <SectionHeading
           index="04"
           title="Attendance is growing for the teams willing to invest"
-          eyebrow="Findings — Attendance"
+          eyebrow="Findings: Attendance"
         />
 
         {/* Summary table — at-a-glance overview before the argument unfolds */}
         <div className="mb-14">
           <p className="font-mono-label text-xs text-[var(--color-primary)] mb-3">
-            Table 1 — attendance, away-draw lift &amp; capacity by team
+            Table 1: attendance, away-draw lift &amp; capacity by team
           </p>
           <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen flex justify-center">
             <div className="w-full max-w-[1000px] px-6">

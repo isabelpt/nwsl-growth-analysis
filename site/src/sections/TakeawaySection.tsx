@@ -18,7 +18,7 @@ export default function TakeawaySection() {
 
           <div className="flex flex-col gap-6">
             <div className="border-l-2 border-[var(--color-accent)] pl-5 py-1">
-              <p className="font-mono-label text-[11px] text-[var(--color-primary)] mb-2">But —</p>
+              <p className="font-mono-label text-[11px] text-[var(--color-primary)] mb-2">But:</p>
               <ul className="space-y-2.5">
                 {[
                   'The league as a whole is growing, but it is also stratifying.',
@@ -36,7 +36,7 @@ export default function TakeawaySection() {
             </div>
 
             <div className="border-l-2 border-[var(--color-accent)] pl-5 py-1">
-              <p className="font-mono-label text-[11px] text-[var(--color-primary)] mb-2">Next steps —</p>
+              <p className="font-mono-label text-[11px] text-[var(--color-primary)] mb-2">Next steps:</p>
               <ul className="space-y-2.5">
                 {[
                   "A more robust causal analysis is attempted in this project's second iteration to explore the significant correlations.",

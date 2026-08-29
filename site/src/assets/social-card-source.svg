@@ -1,0 +1,71 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clip"><rect width="1200" height="630"/></clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="630" fill="#ece5f9"/>
+
+  <g clip-path="url(#clip)" opacity="0.4" stroke="#14263f" stroke-width="3" fill="none">
+    <!-- touchlines -->
+    <rect x="24" y="19" width="1152" height="592" />
+    <!-- halfway line -->
+    <line x1="600" y1="19" x2="600" y2="611" />
+    <!-- center circle + spot -->
+    <circle cx="600" cy="315" r="95" />
+    <circle cx="600" cy="315" r="3" fill="#14263f" stroke="none" />
+    <!-- left penalty + six-yard -->
+    <rect x="24" y="163" width="192" height="304" />
+    <rect x="24" y="239" width="72" height="152" />
+    <!-- right penalty + six-yard -->
+    <rect x="984" y="163" width="192" height="304" />
+    <rect x="1104" y="239" width="72" height="152" />
+  </g>
+
+  <!-- content card -->
+  <rect x="64" y="64" width="1072" height="502" fill="#fbfaf8" fill-opacity="0.88" stroke="#e3ddd3" stroke-width="1.5"/>
+  <rect x="70" y="70" width="1072" height="502" fill="none" stroke="#14263f" stroke-width="4" stroke-opacity="0"/>
+  <!-- offset shadow rule like the site's shadow-offset -->
+  <rect x="70" y="70" width="1072" height="502" fill="none"/>
+
+  <text x="104" y="140" font-family="Menlo, monospace" font-size="17" letter-spacing="2" fill="#a48ce0" font-weight="700">RESEARCH PROJECT · ATTENDANCE ECONOMICS</text>
+
+  <text x="104" y="205" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#14263f">What Drives NWSL</text>
+  <text x="104" y="266" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#14263f">Attendance?</text>
+
+  <text x="104" y="310" font-family="Menlo, monospace" font-size="16" fill="#1e3a5f">By Isabel Prado-Tucker</text>
+
+  <text x="104" y="358" font-family="Helvetica, sans-serif" font-size="21" fill="#1b2430">Evidence of a durable, women&#8217;s specific sports culture.</text>
+
+  <!-- stat tiles -->
+  <g font-family="Menlo, monospace">
+    <g>
+      <rect x="104" y="400" width="230" height="98" fill="#f2efe9" stroke="#e3ddd3"/>
+      <text x="124" y="450" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#14263f">10,243</text>
+      <text x="124" y="478" font-size="12" letter-spacing="1" fill="#1b243099">AVG. ATTENDANCE, 2025</text>
+    </g>
+    <g>
+      <rect x="350" y="400" width="230" height="98" fill="#f2efe9" stroke="#e3ddd3"/>
+      <text x="370" y="450" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#14263f">+3,356</text>
+      <text x="370" y="478" font-size="12" letter-spacing="1" fill="#1b243099">RIVALRY PREMIUM, CASCADIA</text>
+    </g>
+    <g>
+      <rect x="596" y="400" width="230" height="98" fill="#f2efe9" stroke="#e3ddd3"/>
+      <text x="616" y="450" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#14263f">100%</text>
+      <text x="616" y="478" font-size="12" letter-spacing="1" fill="#1b243099">CAPACITY, KC CURRENT</text>
+    </g>
+    <g>
+      <rect x="842" y="400" width="230" height="98" fill="#f2efe9" stroke="#e3ddd3"/>
+      <text x="862" y="450" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#14263f">+1,096</text>
+      <text x="862" y="478" font-size="12" letter-spacing="1" fill="#1b243099">AWAY-DRAW LIFT, BAY FC</text>
+    </g>
+  </g>
+
+  <!-- methods tags -->
+  <g font-family="Menlo, monospace" font-size="13" letter-spacing="1">
+    <rect x="104" y="524" width="150" height="34" fill="#ffffff" stroke="#a48ce0" stroke-width="1.5"/>
+    <text x="124" y="546" fill="#14263f">OLS REGRESSION</text>
+    <rect x="266" y="524" width="150" height="34" fill="#ffffff" stroke="#a48ce0" stroke-width="1.5"/>
+    <text x="286" y="546" fill="#14263f">TOPIC MODELING</text>
+  </g>
+</svg>

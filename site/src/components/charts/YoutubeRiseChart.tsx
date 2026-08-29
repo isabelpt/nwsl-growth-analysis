@@ -26,7 +26,27 @@ function UploadsLineChart() {
   const indepPath = years.map((yr, i) => `${i === 0 ? 'M' : 'L'} ${x(i)} ${y(yr.independentTotal)}`).join(' ')
 
   return (
-    <ChartScrollFrame minWidth={480}>
+    <ChartScrollFrame
+      minWidth={480}
+      overlay={
+        hover !== null && (
+          <ChartTooltip xPct={(x(hover) / W) * 100} yPct={(Math.min(y(years[hover].official), y(years[hover].independentTotal)) / H) * 100} visible>
+            <p className="font-mono-label text-[10px] text-[var(--color-accent)] mb-1">{years[hover].year}</p>
+            <p><span style={{ color: 'var(--color-primary)' }}>&#9679;</span> {officialChannel}: {years[hover].official.toLocaleString()}</p>
+            <p><span style={{ color: 'var(--color-accent)' }}>&#9679;</span> Independents combined: {years[hover].independentTotal.toLocaleString()}</p>
+            {Object.entries(years[hover].byChannel).filter(([, v]) => v > 0).length > 0 && (
+              <p className="text-[var(--color-ink)]/60 mt-1 pt-1 border-t border-[var(--color-line)]">
+                {Object.entries(years[hover].byChannel)
+                  .filter(([, v]) => v > 0)
+                  .sort((a, b) => b[1] - a[1])
+                  .map(([ch, v]) => `${ch}: ${v}`)
+                  .join(' · ')}
+              </p>
+            )}
+          </ChartTooltip>
+        )
+      }
+    >
       <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto block overflow-visible" role="img" aria-label="YouTube uploads per year, NWSL vs independents">
         {[0, 0.5, 1].map((f) => (
           <line key={f} x1={PAD_L} y1={H - PAD_B - f * (H - PAD_T - PAD_B)} x2={W - PAD_R} y2={H - PAD_B - f * (H - PAD_T - PAD_B)} stroke="var(--color-line)" strokeWidth={1} strokeDasharray={f === 0 ? undefined : '3 3'} />
@@ -42,6 +62,21 @@ function UploadsLineChart() {
             {i % 2 === 0 ? yr.year : ''}
           </text>
         ))}
+
+        {(() => {
+          const crossI = years.findIndex((yr) => yr.independentTotal > yr.official)
+          if (crossI < 0) return null
+          const cx = x(crossI)
+          const cy = Math.min(y(years[crossI].official), y(years[crossI].independentTotal))
+          return (
+            <g>
+              <line x1={cx} y1={PAD_T} x2={cx} y2={H - PAD_B} stroke="var(--color-accent)" strokeOpacity={0.4} strokeWidth={1} strokeDasharray="2 3" />
+              <text x={cx} y={cy - 10} textAnchor="middle" className="font-mono-label" fontSize={9} fill="var(--color-accent)">
+                {years[crossI].year}: independents overtake
+              </text>
+            </g>
+          )
+        })()}
 
         {years.map((yr, i) => {
           const isHover = hover === i
@@ -59,23 +94,6 @@ function UploadsLineChart() {
           <line x1={x(hover)} y1={PAD_T} x2={x(hover)} y2={H - PAD_B} stroke="var(--color-ink)" strokeOpacity={0.25} strokeWidth={1} strokeDasharray="3 3" />
         )}
       </svg>
-
-      {hover !== null && (
-        <ChartTooltip xPct={(x(hover) / W) * 100} yPct={(Math.min(y(years[hover].official), y(years[hover].independentTotal)) / H) * 100} visible>
-          <p className="font-mono-label text-[10px] text-[var(--color-accent)] mb-1">{years[hover].year}</p>
-          <p><span style={{ color: 'var(--color-primary)' }}>&#9679;</span> {officialChannel}: {years[hover].official.toLocaleString()}</p>
-          <p><span style={{ color: 'var(--color-accent)' }}>&#9679;</span> Independents combined: {years[hover].independentTotal.toLocaleString()}</p>
-          {Object.entries(years[hover].byChannel).filter(([, v]) => v > 0).length > 0 && (
-            <p className="text-[var(--color-ink)]/60 mt-1 pt-1 border-t border-[var(--color-line)]">
-              {Object.entries(years[hover].byChannel)
-                .filter(([, v]) => v > 0)
-                .sort((a, b) => b[1] - a[1])
-                .map(([ch, v]) => `${ch}: ${v}`)
-                .join(' · ')}
-            </p>
-          )}
-        </ChartTooltip>
-      )}
     </ChartScrollFrame>
   )
 }
@@ -97,7 +115,18 @@ function SubscriberBars() {
   return (
     <div className="mt-4">
       <p className="font-mono-label text-[10px] text-[var(--color-ink)]/60 mb-2">Current subscriber count</p>
-      <ChartScrollFrame minWidth={480}>
+      <ChartScrollFrame
+        minWidth={480}
+        overlay={
+          hover !== null && (
+            <ChartTooltip xPct={(SUB_PLOT_L / SUB_W) * 100} yPct={((8 + hover * SUB_ROW_H) / subH) * 100} visible>
+              <p className="font-mono-label text-[10px] text-[var(--color-accent)] mb-0.5">{rows[hover].channel}</p>
+              <p>{rows[hover].subscribers.toLocaleString()} subscribers</p>
+              <p className="text-[var(--color-ink)]/60">Channel created {rows[hover].created}</p>
+            </ChartTooltip>
+          )
+        }
+      >
       <svg viewBox={`0 0 ${SUB_W} ${subH}`} className="w-full h-auto block overflow-visible" role="img" aria-label="Current YouTube subscriber counts by channel">
         {rows.map((row, i) => {
           const cy = 8 + i * SUB_ROW_H + SUB_ROW_H / 2
@@ -121,14 +150,6 @@ function SubscriberBars() {
           )
         })}
       </svg>
-
-      {hover !== null && (
-        <ChartTooltip xPct={(SUB_PLOT_L / SUB_W) * 100} yPct={((8 + hover * SUB_ROW_H) / subH) * 100} visible>
-          <p className="font-mono-label text-[10px] text-[var(--color-accent)] mb-0.5">{rows[hover].channel}</p>
-          <p>{rows[hover].subscribers.toLocaleString()} subscribers</p>
-          <p className="text-[var(--color-ink)]/60">Channel created {rows[hover].created}</p>
-        </ChartTooltip>
-      )}
       </ChartScrollFrame>
     </div>
   )

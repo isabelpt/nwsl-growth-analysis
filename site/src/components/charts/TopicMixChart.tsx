@@ -52,7 +52,26 @@ export default function TopicMixChart() {
         ))}
       </div>
 
-      <ChartScrollFrame minWidth={480}>
+      <ChartScrollFrame
+        minWidth={480}
+        overlay={
+          hoverCell && (
+            <ChartTooltip
+              xPct={((x(hoverCell.yearIdx) + barW / 2) / W) * 100}
+              yPct={((H - PAD_B - yScale(years[hoverCell.yearIdx].counts[hoverCell.topic]) / 2) / H) * 100}
+              visible
+            >
+              <p className="font-mono-label text-[10px] text-[var(--color-accent)] mb-0.5">{years[hoverCell.yearIdx].year}</p>
+              <p className="font-semibold">{hoverCell.topic}</p>
+              <p>
+                {years[hoverCell.yearIdx].counts[hoverCell.topic].toLocaleString()} articles (
+                {(years[hoverCell.yearIdx].proportions[hoverCell.topic] * 100).toFixed(0)}%)
+              </p>
+              <p className="text-[var(--color-ink)]/60">{years[hoverCell.yearIdx].total.toLocaleString()} total that year</p>
+            </ChartTooltip>
+          )
+        }
+      >
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto block overflow-visible" role="img" aria-label="NWSL headline topic mix by year">
           <line x1={PAD_L} y1={H - PAD_B} x2={W - PAD_R} y2={H - PAD_B} stroke="var(--color-line)" strokeWidth={1.5} />
           {[0, 0.5, 1].map((f) => (
@@ -117,22 +136,6 @@ export default function TopicMixChart() {
             )
           })}
         </svg>
-
-        {hoverCell && (
-          <ChartTooltip
-            xPct={((x(hoverCell.yearIdx) + barW / 2) / W) * 100}
-            yPct={((H - PAD_B - yScale(years[hoverCell.yearIdx].counts[hoverCell.topic]) / 2) / H) * 100}
-            visible
-          >
-            <p className="font-mono-label text-[10px] text-[var(--color-accent)] mb-0.5">{years[hoverCell.yearIdx].year}</p>
-            <p className="font-semibold">{hoverCell.topic}</p>
-            <p>
-              {years[hoverCell.yearIdx].counts[hoverCell.topic].toLocaleString()} articles (
-              {(years[hoverCell.yearIdx].proportions[hoverCell.topic] * 100).toFixed(0)}%)
-            </p>
-            <p className="text-[var(--color-ink)]/60">{years[hoverCell.yearIdx].total.toLocaleString()} total that year</p>
-          </ChartTooltip>
-        )}
       </ChartScrollFrame>
     </div>
   )
