@@ -2,11 +2,11 @@ import SectionHeading from '../components/SectionHeading'
 import FeatureExplorer from '../components/FeatureExplorer'
 import SummaryTable from '../components/SummaryTable'
 import EffectSizeChart from '../components/EffectSizeChart'
-import honeymoonEffect from '../assets/figures/honeymoon-effect.png'
-import rivalryPremium from '../assets/figures/rivalry-premium.png'
-import marketSize from '../assets/figures/market-size.png'
-import olsRegression from '../assets/figures/ols-regression.png'
-import distMilesVsAttendance from '../assets/figures/dist-miles-vs-attendance.png'
+import RivalryPremiumChart from '../components/charts/RivalryPremiumChart'
+import HoneymoonChart from '../components/charts/HoneymoonChart'
+import DistanceChart from '../components/charts/DistanceChart'
+import MarketSizeChart from '../components/charts/MarketSizeChart'
+import OnFieldSuccessChart from '../components/charts/OnFieldSuccessChart'
 
 // Same order as EffectSizeChart (ranked by |coefficient|, largest first) so
 // the mega toggle right above the bar chart previews the exact order the
@@ -16,8 +16,7 @@ const FEATURE_TABS = [
     tabLabel: 'Rivalry',
     effectNote: '+57% attendance',
     significant: true,
-    src: rivalryPremium,
-    alt: "Rivalry matchups carry a significant, positive attendance premium over a team's same-season baseline",
+    chart: <RivalryPremiumChart />,
     claim: "Rivalries sell tickets that standings don't.",
     points: [
       "Cascadia rivalry games hosted in Seattle draw +3,356 fans over the team's own season baseline.",
@@ -28,8 +27,7 @@ const FEATURE_TABS = [
     tabLabel: 'New Stadium',
     effectNote: '+6% attendance, not significant',
     significant: false,
-    src: honeymoonEffect,
-    alt: 'A new stadium buys a team several seasons of sharply elevated attendance',
+    chart: <HoneymoonChart />,
     claim: "Every relocated team got a honeymoon bump, but the regression can't confirm the stadium caused it.",
     points: [
       'Five teams moved into a new venue since 2021 and all saw an attendance jump.',
@@ -41,8 +39,7 @@ const FEATURE_TABS = [
     tabLabel: 'Distance',
     effectNote: '−2% per mile, not significant',
     significant: false,
-    src: distMilesVsAttendance,
-    alt: 'Attendance falls slightly as distance from downtown increases, though the effect is not statistically significant',
+    chart: <DistanceChart />,
     claim: 'Distance from downtown might matter, but less than the literature says, and less certainly too.',
     points: [
       'A study cited in our paper found NWSL attendance falls ~6.6% per mile of distance from downtown.',
@@ -54,8 +51,7 @@ const FEATURE_TABS = [
     tabLabel: 'Market Size',
     effectNote: '−12%, not significant',
     significant: false,
-    src: marketSize,
-    alt: 'Market size is only weakly correlated with average attendance across teams',
+    chart: <MarketSizeChart />,
     claim: "Market size barely moves the needle.",
     points: [
       'Metro population barely correlates with attendance in either league (NWSL r=0.05, n=16; MLS r=-0.19, n=30).',
@@ -67,8 +63,7 @@ const FEATURE_TABS = [
     tabLabel: 'On-Field Success',
     effectNote: '+22%, not significant',
     significant: false,
-    src: olsRegression,
-    alt: 'On-field success explains markedly less variance in attendance than the rivalry effect does',
+    chart: <OnFieldSuccessChart />,
     claim: "Winning doesn't reliably fill the stands.",
     points: [
       'Points-per-game correlates weakly with same-season attendance too (NWSL r=0.24, n=85; MLS r=0.17, n=261).',

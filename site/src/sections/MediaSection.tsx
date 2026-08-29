@@ -1,7 +1,7 @@
 import SectionHeading from '../components/SectionHeading'
 import FigureSpread from '../components/FigureSpread'
-import youtubeRise from '../assets/figures/youtube-rise.png'
-import topicMixByYear from '../assets/figures/topic-mix-by-year.png'
+import TopicMixChart from '../components/charts/TopicMixChart'
+import YoutubeRiseChart from '../components/charts/YoutubeRiseChart'
 
 // The media/coverage half of the findings -- a separate dataset (8,328
 // headlines + YouTube channel growth) and a separate claim (a broader
@@ -21,8 +21,7 @@ export default function MediaSection() {
         {/* Topic modeling: coverage volume + composition, plus the star-power finding */}
         <div className="mb-14">
           <FigureSpread
-            src={topicMixByYear}
-            alt="LDA topic modeling of NWSL headlines shows coverage volume rising since 2018, with a shift from 'how to watch' logistics toward coaching storylines and competitive coverage"
+            chart={<TopicMixChart />}
             label="Figure 3"
             claim="Coverage is growing up, not just growing."
             points={[
@@ -36,8 +35,7 @@ export default function MediaSection() {
         {/* Closing beat: broadens from stadium attendance to league-wide culture */}
         <div>
           <FigureSpread
-            src={youtubeRise}
-            alt="YouTube upload growth for women's soccer channels accelerates as independent channels launch and overtake the NWSL's own"
+            chart={<YoutubeRiseChart />}
             label="Figure 4"
             claim="Demand for women's soccer content is bigger than the league's own channel."
             reverse
